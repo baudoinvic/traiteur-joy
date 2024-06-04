@@ -32,6 +32,7 @@ const Navbar = () => {
             <h1 className=" text-xl font-semibold">Traiteur joy</h1>
           </div>
 
+         
           <nav className="hidden md:flex flex-row items-center text-lg font-medium gap-8">
             <Link
               to="/home"
@@ -40,11 +41,11 @@ const Navbar = () => {
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              Home
+              Accueil
             </Link>
 
             <div className="relative group">
-              <div className=" flex items-center gap-1">
+              <div className="flex items-center gap-1">
                 <Link
                   to="/dishes"
                   spy={true}
@@ -52,7 +53,7 @@ const Navbar = () => {
                   duration={500}
                   className="hover:text-brightColor transition-all cursor-pointer"
                 >
-                  cooking course
+                  Cours de cuisine
                 </Link>
               </div>
             </div>
@@ -64,7 +65,7 @@ const Navbar = () => {
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              About us
+              À propos de nous
             </Link>
 
             <Link
@@ -74,7 +75,7 @@ const Navbar = () => {
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              Our Menu
+              Notre Menu
             </Link>
 
             <Link
@@ -84,7 +85,7 @@ const Navbar = () => {
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              Menu General
+              Menu Général
             </Link>
 
             <Link
@@ -94,10 +95,8 @@ const Navbar = () => {
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              Contact us
+              Contactez-nous
             </Link>
-
-            {/* <Button title="Login" /> */}
           </nav>
 
           <div className="md:hidden flex items-center">

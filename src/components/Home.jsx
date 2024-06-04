@@ -29,7 +29,27 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="description mt-20 px-5 lg:px-0 mx-auto w-2/4 text-center">
+      <div className="description mt-20 px-5 lg:px-0 mx-auto w-full lg:w-2/3 xl:w-1/2 text-center">
+        <p className="text-gray-500  leading-relaxed">
+          J'ai conçu ce concept gastronomique pour vous il y a dix ans ! C'est
+          toujours un réel plaisir de vous accueillir chez nous, dans notre loft
+          <br /> pour un moment de convivialité en cuisine puis à table autour
+          d'un repas que nous préparons ensemble.
+        </p>
+        <p className="mt-10 text-gray-500  leading-relaxed">
+          ✻ Je n'ai pas été formé par un grand chef. L'idée ici est de partager
+          une passion. Le plaisir d'être en cuisine m'a été transmis par
+          <br /> mon grand-père, mon Nonno. Mes influences ? L'Italie, avant
+          tout, ses arômes, ses vins et son huile d'olive pour une cuisine
+          simple et authentique.
+          <br /> Plus largement, il s'agit d'une cuisine fraîche, colorée et
+          saine aux accents méditerranéens, mais aussi de répondre à vos envies
+          et aux défis
+          <br /> que vous souhaitez me lancer.
+        </p>
+      </div>
+
+      {/* <div className="description mt-20 px-5 lg:px-0 mx-auto w-2/4 text-center">
         <p className="text-gray-500 block text-base">
           J'ai conçu ce concept gastronomique pour vous il y a dix ans ! C'est
           toujours un réel plaisir de vous accueillir chez nous, dans notre loft
@@ -48,7 +68,7 @@ const Home = () => {
           et aux défis
           <br /> que vous souhaitez me lancer.
         </p>
-      </div>
+      </div> */}
 
       <div className="text-center mt-10">
         <span className="text-lg md:text-2xl lg:text-3xl font-bold md:text-left">
@@ -139,7 +159,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="ml-4 md:ml-16 mr-4 md:mr-16 p-10 md:p-24 flex flex-col md:flex-row items-center bg-gradient-to-br from-gray-100 to-blue-50 shadow-lg rounded-2xl mt-6 md:mt-12 transform hover:scale-105 transition-transform duration-300 ">
+      <div className="ml-4 md:ml-16 mr-4 md:mr-16 p-10 md:p-24 flex flex-col md:flex-row items-center bg-gradient-to-br from-gray-100 to-blue-50 shadow-lg rounded-2xl mt-6 md:mt-12   ">
         <span className="mr-8 md:w-3/5 md:mr-0 md:mt-0 text-center md:text-left ">
           <h2 className="text-2xl md:text-2xl font-extrabold text-gray-800 mb-6 leading-tight">
             Collaborons pour donner vie à vos idées
