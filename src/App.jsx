@@ -1,42 +1,34 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 import Dishes from "./components/Dishes";
-import Reviews from "./components/Review";
 import Review from "./components/Review";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
+    <Router>
+      <div>
+        <Navbar />
 
-      <main>
-        <div id="home">
-          <Home />
-        </div>
+        <main>
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/dishes" element={<Dishes />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/review" element={<Review />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
 
-        <div id="dishes">
-          <Dishes />
-        </div>
-
-        <div id="about">
-          <About />
-        </div>
-
-        <div id="menu">
-          <Menu />
-        </div>
-
-        <div id="review">
-          <Review />
-        </div>
-      </main>
-
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

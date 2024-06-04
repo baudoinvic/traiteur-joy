@@ -1,5 +1,5 @@
 {
-  "name": "resto-web",
+  "name": "traiteur-joy",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.11.0",
-    "react-scroll": "^1.9.0"
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.23.1",
+    "react-scroll": "^1.9.0",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

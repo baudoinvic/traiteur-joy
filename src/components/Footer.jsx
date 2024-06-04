@@ -67,13 +67,13 @@ const Footer = () => {
               className=" hover:text-brightColor transition-all cursor-pointer"
               href="/"
             >
-              FoodieWeb@email.com
+              traiteurjoy@email.com
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
               href="/"
             >
-              +64 958 248 966
+              +32 493 03 94 40
             </a>
             <a
               className=" hover:text-brightColor transition-all cursor-pointer"
