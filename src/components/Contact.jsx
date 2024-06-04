@@ -63,7 +63,7 @@ function Contact() {
         </span>
       </div>
 
-      <div className=" flex items-center justify-center mt-10">
+      <div className=" flex items-center justify-center mt-10 ">
         <div className="bg-white p-8 rounded shadow-md w-full md:w-7/6 lg:w-1/2 xl:w-1/3">
           <form onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -164,37 +164,63 @@ function Contact() {
           <ToastContainer />
         </div>
       </div>
-      <br />
-      <br />
-
-      <div className="flex flex-col md:flex-row justify-between mt-8 ml-10 mr-10">
-        <div className="w-full md:w-1/4 bg-white p-4 rounded-lg shadow-md mb-4 md:mb-0 md:mr-4">
-          <h1 className="text-xl md:text-2xl font-semibold mb-2">Address</h1>
-          <IoLocationOutline className="text-3xl md:text-4xl text-gray-600" />
-          <span className="text-sm md:text-base">KG 460 street</span>
+      <div className="flex flex-row items-center mt-16 px-6 space-x-10">
+        <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden mb-8">
+          <div className="bg-brightColor text-white p-4">
+            <h1 className="text-base font-semibold flex items-center">
+              <IoLocationOutline className="text-3xl mr-3" />
+              Address
+            </h1>
+          </div>
+          <div className="p-6">
+            <p className="text-gray-700 text-xs leading-relaxed">
+              Rue Joseph Stevens 28
+              <br />
+              1000 Bruxelles
+              <br />
+              TVA 0744.562.496
+            </p>
+          </div>
         </div>
 
-        <div className="w-full md:w-1/4 bg-white p-4 rounded-lg shadow-md mb-4 md:mb-0 md:mx-4">
-          <h1 className="text-xl md:text-2xl font-semibold mb-2">Email Us</h1>
-          <MdOutlineMailOutline className="text-3xl md:text-4xl text-gray-600" />
-          <span className="text-sm md:text-base">
-            info@fabtechhub.gmail.com
-          </span>
+        <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden mb-8">
+          <div className="bg-brightColor text-white p-4">
+            <h1 className="text-base font-semibold flex items-center">
+              <MdOutlineMailOutline className="text-3xl mr-3" />
+              Email
+            </h1>
+          </div>
+          <div className="p-6">
+            <p className="text-gray-700 text-xs">traiteurjoy@gmail.com</p>
+            <div className="mt-6 flex items-center text-gray-600 hover:text-green-700 transition-colors">
+              <MdOutlineMailOutline className="text-2xl mr-2" />
+              <a
+                href="mailto:traiteurjoy@gmail.com"
+                className="text-xs font-medium"
+              >
+                Send Email
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div className="w-full md:w-1/4 bg-white p-4 rounded-lg shadow-md">
-          <h1 className="text-xl md:text-2xl font-semibold mb-2">Call Us</h1>
-          <FaPhoneAlt className="text-3xl md:text-4xl text-gray-600" />
-          <span className="text-sm md:text-base">+250783012138</span>
+        <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden">
+          <div className="bg-brightColor text-white p-4">
+            <h1 className="text-base font-semibold flex items-center">
+              <FaPhoneAlt className="text-2xl mr-3" />
+              Telephone
+            </h1>
+          </div>
+          <div className="p-6">
+            <p className="text-gray-700 text-xs">+32 498 77 82 91</p>
+            <div className="mt-6 flex items-center text-purple-600 hover:text-purple-700 transition-colors">
+              <FaPhoneAlt className="text-2xl mr-2" />
+              <a href="tel:+32498778291" className="text-xs font-medium">
+                Call Now
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="items-center p-4 mt-10">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30607.79514638295!2d30.066595630129367!3d-1.9550632439832505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssp rwanda!5e0!3m2!1sen!2srw!4v1663256798141!5m2!1sen!2srw"
-          width="100%"
-          height="600px"
-        />
       </div>
     </div>
   );
