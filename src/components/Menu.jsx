@@ -24,7 +24,7 @@ const Menu = () => {
       </div>
       <div className="">
         <p
-          className="mt-5 text-base text-white"
+          className="mt-5 text-base mb-10 text-white"
           style={{ fontSize: "16px" }}
         >
           Betterave rouge en purée pour la bolognaise (10
@@ -32,11 +32,11 @@ const Menu = () => {
           <br />
           <br />
           Ketchup maison
-          (15g)………………………………………………………………………………………………....................................................+-0.10
+          (15g)……………………………………………………………………………………………….............................+-0.10
           <br />
           <br />
           Samoussa croquant végétarien
-          (40gr)……………………………………………………………….................................................+-0.40
+          (40gr)……………………………………………………………….........................................+-0.40
           <br />
           <br />
           Smoothie pomme-canelle-avoine-noix-(Avec ou sans miel bio

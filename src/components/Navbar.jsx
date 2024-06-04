@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-// import { BiRestaurant } from "react-icons/bi";
+
 import Button from "../layouts/Button";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
-import { BiChevroDown } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import traite from "../assets/img/traite.png";
 import { Link } from "react-router-dom";
@@ -53,7 +52,7 @@ const Navbar = () => {
                   duration={500}
                   className="hover:text-brightColor transition-all cursor-pointer"
                 >
-                  Dishes
+                  cooking course
                 </Link>
               </div>
             </div>
@@ -65,7 +64,7 @@ const Navbar = () => {
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              About
+              About us
             </Link>
 
             <Link
@@ -75,7 +74,7 @@ const Navbar = () => {
               duration={500}
               className="hover:text-brightColor transition-all cursor-pointer"
             >
-              Menu
+              Our Menu
             </Link>
 
             <Link

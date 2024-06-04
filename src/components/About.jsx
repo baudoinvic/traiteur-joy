@@ -31,14 +31,10 @@ const About = () => {
                 freshest ingredients, ensuring that every bite is a masterpiece
                 of flavor and presentation.
               </p>
-              {/* <a
-                href="#"
-                class="inline-block bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition-colors duration-300"
-              >
-                Read More about our General menu
-              </a> */}
+              
             </div>
           </div>
+          
         </div>
       </section>
     </div>
