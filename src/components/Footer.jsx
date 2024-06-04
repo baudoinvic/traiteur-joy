@@ -4,132 +4,169 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { BsInstagram } from "react-icons/bs";
 import traite from "../assets/img/traite.png";
 import { Link } from "react-router-dom";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
+import {
+  
+  FaPhoneAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className=" bg-black text-white rounded-t-3xl mt-8 md:mt-0">
-      <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
-        <div className=" w-full md:w-1/4">
-          <div className="flex flex-row">
-            <span>
+ 
+    <div className="bg-gray-900 text-white rounded-t-3xl mt-8 md:mt-0 shadow-2xl">
+      <div className="container mx-auto p-8 md:p-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="space-y-6">
+            <div className="flex items-center space-x-4">
               <img
                 src={traite}
-                alt="Restaurant Icon"
-                className="w-16 h-8 inline-block align-text-bottom"
+                alt="Logo Traiteur Joy"
+                className="w-16 h-auto rounded-full shadow-lg"
               />
-            </span>
-            <h1 className=" font-semibold text-xl pb-4">Traiteur joy</h1>
-          </div>
-          <p className=" text-sm">
-            We are here to serve you your Delicious foods
-            <br />
-            with drink as well
-          </p>
-          <p className="mt-5">Subscribe to our newsletter </p>
-          <form
-            action="/subscribe"
-            method="post"
-            class="flex flex-col md:flex-row md:items-center"
-          >
-            <div class="mb-4 md:mb-0 md:mr-4">
-              <input
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-                class="px-4 py-2 border border-brightColor rounded-md focus:outline-none focus:ring-2 "
-              ></input>
+              <h1 className="font-bold text-2xl text-brightColor">
+                Traiteur Joy
+              </h1>
             </div>
-            <button
-              type="submit"
-              class="px-4 py-2 text-white bg-brightColor rounded-md focus:outline-none focus:ring-2 "
-            >
-              Subscribe
-            </button>
-          </form>
+            <p className="text-gray-300">
+              Nous sommes là pour vous servir des plats délicieux,
+              <br />
+              accompagnés de boissons raffinées.
+            </p>
+            <div>
+              <p className="text-lg font-semibold mb-3">
+                Suivez Notre Actualité
+              </p>
+              <form
+                action="/abonnement"
+                method="post"
+                className="flex flex-col space-y-3"
+              >
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Entrez votre email"
+                  required
+                  className="px-4 py-3 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-brightColor"
+                />
+                <button
+                  type="submit"
+                  className="px-6 py-3 bg-brightColor text-white rounded-lg font-semibold hover:bg-brightColor-dark transition duration-300 shadow-md"
+                >
+                  S'abonner
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-brightColor mb-6">
+              Navigation
+            </h2>
+            <nav className="space-y-3">
+              <Link
+                to="/plats"
+                className="block text-gray-300 hover:text-brightColor transition duration-300"
+              >
+                Nos Plats
+              </Link>
+              <Link
+                to="/a-propos"
+                className="block text-gray-300 hover:text-brightColor transition duration-300"
+              >
+                À Propos
+              </Link>
+              <Link
+                to="/menu"
+                className="block text-gray-300 hover:text-brightColor transition duration-300"
+              >
+                Menu
+              </Link>
+              <Link
+                to="/carte-generale"
+                className="block text-gray-300 hover:text-brightColor transition duration-300"
+              >
+                Carte Générale
+              </Link>
+            </nav>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-brightColor mb-6">
+              Services
+            </h2>
+            <nav className="space-y-3">
+              <Link
+                to="/traiteur"
+                className="block text-gray-300 hover:text-brightColor transition duration-300"
+              >
+                Services Traiteur
+              </Link>
+              <Link
+                to="/cours-cuisine"
+                className="block text-gray-300 hover:text-brightColor transition duration-300"
+              >
+                Cours de Cuisine
+              </Link>
+              <Link
+                to="/evenements"
+                className="block text-gray-300 hover:text-brightColor transition duration-300"
+              >
+                Événements Privés
+              </Link>
+              <Link
+                to="/livraison"
+                className="block text-gray-300 hover:text-brightColor transition duration-300"
+              >
+                Livraison à Domicile
+              </Link>
+            </nav>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-brightColor mb-6">
+              Contact
+            </h2>
+            <nav className="space-y-4">
+              <a
+                href="mailto:traiteurjoy@gmail.com"
+                className="block text-gray-300 hover:text-brightColor transition duration-300 flex items-center"
+              >
+                <MdOutlineMailOutline className="text-2xl mr-3" />
+                traiteurjoy@gmail.com
+              </a>
+              <a
+                href="tel:+32493039440"
+                className="block text-gray-300 hover:text-brightColor transition duration-300 flex items-center"
+              >
+                <FaPhoneAlt className="text-xl mr-3" />
+                +32 493 03 94 40
+              </a>
+              <a
+                href="https://goo.gl/maps/yourAddress"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-gray-300 hover:text-brightColor transition duration-300 flex items-start"
+              >
+                <IoLocationOutline className="text-2xl mr-3 mt-1" />
+                <span>
+                  Rue Joseph Stevens 28
+                  <br /> 1000 Bruxelles
+                  <br /> TVA 0744.562.496
+                </span>
+              </a>
+            </nav>
+          </div>
         </div>
-        <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Links</h1>
-          <nav className=" flex flex-col gap-2">
-            <Link
-              className="hover:text-brightColor transition-all cursor-pointer"
-              to="/dishes"
-            >
-              Dishes
-            </Link>
-            <Link
-              className="hover:text-brightColor transition-all cursor-pointer"
-              to="/about"
-            >
-              About
-            </Link>
-            <Link
-              className="hover:text-brightColor transition-all cursor-pointer"
-              to="/menu"
-            >
-              Menu
-            </Link>
-            <Link
-              className="hover:text-brightColor transition-all cursor-pointer"
-              to="/review"
-            >
-              General Menu
-            </Link>
-          </nav>
+
+        <div className="mt-16 pt-8 border-t border-gray-700">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 mb-4 md:mb-0">
+              © 2024 Traiteur Joy. Tous droits réservés.
+            </p>
+          
+          </div>
         </div>
-        <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Menu</h1>
-          <nav className=" flex flex-col gap-2">
-            <Link
-              className="hover:text-brightColor transition-all cursor-pointer"
-              to="/Dishes"
-            >
-              our Dishes
-            </Link>
-            <Link
-              className="hover:text-brightColor transition-all cursor-pointer"
-              to="/menu"
-            >
-              Menu
-            </Link>
-            <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/rewiew"
-            >
-              Menu General
-            </a>
-          </nav>
-        </div>
-        <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Contact Us</h1>
-          <nav className=" flex flex-col gap-2">
-            <span className=" hover:text-brightColor transition-all cursor-pointer">
-              traiteurjoy@email.com
-            </span>
-            <span className=" hover:text-brightColor transition-all cursor-pointer">
-              +32 493 03 94 40
-            </span>
-            <span className=" hover:text-brightColor transition-all cursor-pointer">
-              Address: Rue Joseph Stevens 28
-              <br /> 1000 Bruxelles TVA 0744.562.496
-            </span>
-            {/* <a
-              className=" hover:text-brightColor transition-all cursor-pointer"
-              href="/"
-            >
-              Social media
-            </a> */}
-          </nav>
-        </div>
-      </div>
-      <div>
-        <p>
-          <p className=" text-center py-4">
-            @copyright developed in
-            <span className=" text-brightColor">2024 </span> | All rights
-            reserved
-          </p>
-        </p>
       </div>
     </div>
   );

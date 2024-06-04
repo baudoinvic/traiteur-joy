@@ -133,22 +133,29 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="ml-2 md:ml-10 mr-2 md:mr-10 p-8 md:p-20 flex flex-col md:flex-row items-start bg-gray-100 shadow-md rounded mt-4 md:mt-8">
-        <span className="mr-6 md:w-1/2 md:mr-0 md:mt-0">
-          <h2 className="text-xl md:text-3xl font-bold text-gray-800 mb-4">
-            Get in touch for collaboration
+      <div className="ml-4 md:ml-16 mr-4 md:mr-16 p-10 md:p-24 flex flex-col md:flex-row items-center bg-gradient-to-br from-gray-100 to-blue-50 shadow-lg rounded-2xl mt-6 md:mt-12 transform hover:scale-105 transition-transform duration-300 ">
+        <span className="mr-8 md:w-3/5 md:mr-0 md:mt-0 text-center md:text-left ">
+          <h2 className="text-2xl md:text-2xl font-extrabold text-gray-800 mb-6 leading-tight">
+            Collaborons pour donner vie à vos idées
           </h2>
-          <p className="text-sm md:text-base leading-relaxed">
-            Hey there! This is the best way we can get in touch to collaborate
-            on your new project. If you have any questions, feel free to reach
-            out to us through our official email address or phone number. We're
-            also active on various social media platforms, so connect with us on
-            Facebook, Instagram, or LinkedIn. We look forward to hearing from
-            you and exploring opportunities for collaboration.
+          <p className="text-base md:text-lg leading-relaxed text-gray-700">
+            Bonjour ! C'est le meilleur moyen de nous contacter pour collaborer
+            sur votre nouveau projet. Si vous avez des questions, n'hésitez pas
+            à nous joindre via notre adresse e-mail officielle ou notre numéro
+            de téléphone. Nous sommes également actifs sur divers réseaux
+            sociaux, alors connectez-vous avec nous sur Facebook, Instagram ou
+            LinkedIn. Nous avons hâte d'avoir de vos nouvelles et d'explorer
+            ensemble de nouvelles opportunités passionnantes.
           </p>
         </span>
-        <Link to="/contact" className="flex items-center mt-4 md:mt-0 ml-auto">
-          <Button title="Get in touch" />
+        <Link
+          to="/contact"
+          className="flex items-center justify-center mt-8 md:mt-0 md:ml-auto w-full md:w-2/5"
+        >
+          <button className="bg-brightColor text-white font-bold py-4 px-8 rounded-full shadow-md transform hover:scale-110 transition-transform duration-300 w-full md:w-auto">
+            Contactez-nous
+            <i className="fas fa-arrow-right ml-3"></i>
+          </button>
         </Link>
       </div>
     </div>
