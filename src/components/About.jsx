@@ -16,25 +16,25 @@ const About = () => {
               ></img>
             </div>
             <div class="md:w-1/2 md:pl-8">
-              <h2 class="text-3xl font-bold mb-4">About Traiteur Joy</h2>
+              <h2 class="text-3xl font-bold mb-4">À propos de Traiteur Joy</h2>
               <p class="text-gray-700 mb-6">
-                Welcome to Traiteur Joy, where we celebrate the art of fine
-                dining and exceptional culinary experiences. Our restaurant is a
-                labor of love, born from a passion for creating unforgettable
-                moments through exquisite flavors and impeccable service.
+                Bienvenue chez Traiteur Joy, où nous célébrons l'art de la
+                gastronomie fine et des expériences culinaires exceptionnelles.
+                Notre restaurant est un travail d'amour, né d'une passion pour
+                créer des moments inoubliables à travers des saveurs exquises et
+                un service impeccable.
               </p>
               <p class="text-gray-700 mb-8">
-                At Traiteur Joy, we believe that dining is not just about
-                satisfying hunger, but about indulging in a sensory journey that
-                tantalizes the palate and delights the senses. Our talented
-                chefs meticulously craft each dish, using only the finest and
-                freshest ingredients, ensuring that every bite is a masterpiece
-                of flavor and presentation.
+                Chez Traiteur Joy, nous croyons que le repas ne consiste pas
+                seulement à satisfaire la faim, mais à s'immerger dans un voyage
+                sensoriel qui titille le palais et ravit les sens. Nos chefs
+                talentueux élaborent méticuleusement chaque plat, en utilisant
+                uniquement les ingrédients les plus fins et les plus frais,
+                garantissant que chaque bouchée soit un chef-d'œuvre de saveur
+                et de présentation.
               </p>
-              
             </div>
           </div>
-          
         </div>
       </section>
     </div>

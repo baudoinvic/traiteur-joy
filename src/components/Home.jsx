@@ -7,13 +7,14 @@ const Home = () => {
   return (
     <div className="landing-page">
       <div className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/hero.jpg')] bg-cover bg-no-repeat ">
-        <div className=" w-full lg:w-2/3 space-y-5">
-          <h1 className=" text-white font-semibold text-6xl">
-            For the love of delicious food
+        <div className="w-full lg:w-2/3 space-y-5">
+          <h1 className="text-white font-semibold text-6xl">
+            Pour l'amour de la nourriture délicieuse
           </h1>
-          <p className=" text-white">
-            Come with family & feel the joy of mouthwatering food we always
-            serve delicious foods to our customers
+          <p className="text-white">
+            Venez en famille et ressentez la joie de savourer une nourriture
+            délicieuse.
+            <br /> Nous servons toujours des plats savoureux à nos clients.
           </p>
           <div className="mt-20">
             <Link to="/menu">
@@ -21,56 +22,58 @@ const Home = () => {
                 href=""
                 className="inline-block px-8 py-4 bg-white text-brightColor border-2 border-brightColor rounded-full text-lg font-semibold hover:bg-brightColor hover:text-white transition duration-300"
               >
-                View our Menu
+                Voir notre menu
               </a>
             </Link>
           </div>
         </div>
       </div>
+
       <div className="description mt-20 px-5 lg:px-0 mx-auto w-2/4 text-center">
-        <p className="text-gray-500 block text-base ">
-          I came up with this gourmet concept for you ten years ago! It is
-          always a real pleasure to welcome you to our place, in our loft
-          <br /> for a moment of conviviality in the kitchen and then at the
-          table around a meal we prepare together.
+        <p className="text-gray-500 block text-base">
+          J'ai conçu ce concept gastronomique pour vous il y a dix ans ! C'est
+          toujours un réel plaisir de vous accueillir chez nous, dans notre loft
+          <br /> pour un moment de convivialité en cuisine puis à table autour
+          d'un repas que nous préparons ensemble.
         </p>
-        <p className="mt-10 text-gray-500 block text-base ">
-          ✻ I wasn't trained by a great chef. The idea here is to share a
-          passion. The pleasure of being in the kitchen was passed down to me by
+        <p className="mt-10 text-gray-500 block text-base">
+          ✻ Je n'ai pas été formé par un grand chef. L'idée ici est de partager
+          une passion. Le plaisir d'être en cuisine m'a été transmis par
           <br />
-          my grandfather, my Nonno. My influences? Italy, first and foremost,
-          its aromas, its wines, and its olive oil for simple and genuine
-          cuisine.
-          <br /> More broadly, it's about fresh, colorful, and healthy cooking
-          with Mediterranean accents, but also about fulfilling your desires and
-          the challenges
-          <br /> you want to present to me.
+          mon grand-père, mon Nonno. Mes influences ? L'Italie, avant tout, ses
+          arômes, ses vins et son huile d'olive pour une cuisine simple et
+          authentique.
+          <br /> Plus largement, il s'agit d'une cuisine fraîche, colorée et
+          saine aux accents méditerranéens, mais aussi de répondre à vos envies
+          et aux défis
+          <br /> que vous souhaitez me lancer.
         </p>
       </div>
 
       <div className="text-center mt-10">
-        <span className="text-lg md:text-2xl lg:text-3xl font-bold md:text-left ">
-          Explore Delicious Dishes
-          <br className="hidden md:inline" /> and Unique Flavors
+        <span className="text-lg md:text-2xl lg:text-3xl font-bold md:text-left">
+          Explorez des plats délicieux
+          <br className="hidden md:inline" /> et des saveurs uniques
         </span>
       </div>
 
       <div className="" style={{ marginTop: "7rem" }}>
         <div class="flex flex-col lg:flex-row items-center justify-center">
           <div class="flex flex-col justify-left mr-10 lg:mr-0 lg:ml-12">
-            <span class="block text-left text-3xl font-bold text-gray-800 mb-4 ">
-              Crafting Exceptional
-              <br /> Culinary Experiences
+            <span class="block text-left text-3xl font-bold text-gray-800 mb-4">
+              Création d'Expériences
+              <br /> Culinaires Exceptionnelles
             </span>
             <span class="text-gray-500 block text-left text-base mb-4 lg:mt-10">
-              Our culinary creations are meticulously prepared
+              Nos créations culinaires sont méticuleusement préparées
               <br class="hidden lg:inline" />
-              to satisfy a variety of tastes and preferences.
+              pour satisfaire une variété de goûts et de préférences.
               <br class="hidden lg:inline" />
-              Our kitchen team collaborates closely to create innovative dishes
+              Notre équipe de cuisine collabore étroitement pour créer des plats
+              innovants
               <br class="hidden lg:inline" />
-              and dedication to culinary excellence that reflect our passion for
-              food
+              et un dévouement à l'excellence culinaire qui reflètent notre
+              passion pour la nourriture
             </span>
           </div>
 
@@ -90,18 +93,20 @@ const Home = () => {
 
           <div class="flex flex-col justify-left ml-0 lg:ml-12 mt-8 lg:mt-0">
             <span class="block text-left text-3xl font-bold text-gray-800 mb-4">
-              Crafting Delicious <br class="hidden lg:inline" />
-              Dining Moments
+              Création de Moments
+              <br class="hidden lg:inline" />
+              Culinaires Délicieux
             </span>
             <span class="block text-left text-base text-gray-500 mb-4">
-              We're experts in creating unforgettable dining experiences
+              Nous sommes experts dans la création d'expériences gastronomiques
+              inoubliables
               <br class="hidden lg:inline" />
-              From our thoughtfully designed menus to our creative presentation
+              De nos menus soigneusement conçus à notre présentation créative
               <br class="hidden lg:inline" />
-              we're dedicated to making every meal memorable Whether it's our
-              flavorful dishe
+              nous nous engageons à rendre chaque repas mémorable. Que ce soit
+              nos plats savoureux
               <br class="hidden lg:inline" />
-              our goal is to delight your taste buds
+              notre objectif est de ravir vos papilles
             </span>
           </div>
         </div>
@@ -110,25 +115,26 @@ const Home = () => {
       <div className="flex flex-col lg:flex-row justify-center items-center lg:px-32 px-5 mt-20">
         <img src={img} alt="img" />
 
-        <div className=" space-y-4 lg:pt-14">
-          <h1 className=" font-semibold text-4xl text-center md:text-start">
-            Why Choose Us?
+        <div className="space-y-4 lg:pt-14">
+          <h1 className="font-semibold text-4xl text-center md:text-start">
+            Pourquoi Nous Choisir ?
           </h1>
           <p className="text-gray-500 block">
-            we believe that every meal should be an experience. Our passion for
-            culinary excellence and commitment to quality have made us a
-            favorite among food enthusiasts. Here’s why you should choose us.
-            Our menu features a blend of traditional and contemporary dishes,
-            crafted with the finest ingredients. From our signature dishes
+            Nous croyons que chaque repas doit être une expérience. Notre
+            passion pour l'excellence culinaire et notre engagement envers la
+            qualité nous ont fait devenir un favori parmi les amateurs de bonne
+            cuisine. Voici pourquoi vous devriez nous choisir. Notre menu
+            propose un mélange de plats traditionnels et contemporains, élaborés
+            avec les meilleurs ingrédients. De nos plats signatures
           </p>
           <p className="text-gray-500 block">
-            Our restaurant is designed to provide a cozy and welcoming
-            environment where you can relax and enjoy your meal. Whether you’re
-            dining with family, friends, or on a romantic date, you’ll feel
-            right at home
+            Notre restaurant est conçu pour offrir un environnement chaleureux
+            et accueillant où vous pouvez vous détendre et apprécier votre
+            repas. Que vous dîniez en famille, entre amis, ou lors d'un
+            rendez-vous romantique, vous vous sentirez comme chez vous.
           </p>
-          <div className=" flex justify-center lg:justify-start">
-            <Button title="Learn More" />
+          <div className="flex justify-center lg:justify-start">
+            <Button title="En Savoir Plus" />
           </div>
         </div>
       </div>
