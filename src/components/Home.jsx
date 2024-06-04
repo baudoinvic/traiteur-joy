@@ -12,11 +12,17 @@ const Home = () => {
             For the love of delicious food
           </h1>
           <p className=" text-white">
-            Come with family & feel the joy of mouthwatering food we always serve delicious foods to our customers
+            Come with family & feel the joy of mouthwatering food we always
+            serve delicious foods to our customers
           </p>
           <div className="mt-20">
             <Link to="/menu">
-              <Button title="View our menu" />
+              <a
+                href=""
+                className="inline-block px-8 py-4 bg-white text-brightColor border-2 border-brightColor rounded-full text-lg font-semibold hover:bg-brightColor hover:text-white transition duration-300"
+              >
+                View our Menu
+              </a>
             </Link>
           </div>
         </div>
