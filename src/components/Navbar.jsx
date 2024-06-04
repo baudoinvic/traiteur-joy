@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import { BiRestaurant } from "react-icons/bi";
 import Button from "../layouts/Button";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
-import { BiChevronDown } from "react-icons/bi";
+import { BiChevroDown } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 import traite from "../assets/img/traite.png";
 import { Link } from "react-router-dom";

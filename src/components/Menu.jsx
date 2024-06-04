@@ -6,18 +6,27 @@ import menu3 from "../assets/img/menu3.jpg";
 
 const Menu = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center lg:px-32 px-5 pt-20 ">
+    <div
+      className="min-h-screen flex flex-col justify-center items-center lg:px-32 px-5 pt-20 bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "url('https://img.freepik.com/premium-photo/colorful-various-herbs-spices-cooking-dark-background_370312-476.jpg')",
+      }}
+    >
+      {" "}
       <h1 className=" text-4xl font-semibold text-center lg:pt-8 pt-24 pb-10 text-brightColor">
         TRAITEUR JOY MENU
       </h1>
-
       <div className=" flex justify-center space-x-60 font-bold text-lg text-brightColor">
         <p>Recettes</p>
         <p>Portion par élève</p>
         <p>EUROS</p>
       </div>
       <div className="">
-        <p className="mt-5 text-base text-gray-500" style={{fontSize: '16px'}}>
+        <p
+          className="mt-5 text-base text-white"
+          style={{ fontSize: "16px" }}
+        >
           Betterave rouge en purée pour la bolognaise (10
           g)………………………………………….......................................+-0.10
           <br />

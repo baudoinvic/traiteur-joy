@@ -58,8 +58,8 @@ function Contact() {
           Contact Us
         </h2>
         <span className="text-sm md:text-base lg:text-lg ">
-          Have a project in mind that you think we’d be a great <br />
-          fit for it? We’d love to know what you’re thinking
+          please fill free to fill this form if you have a question <br />
+          we are here to help you and guide you as well
         </span>
       </div>
 

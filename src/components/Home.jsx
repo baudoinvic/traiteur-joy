@@ -9,14 +9,16 @@ const Home = () => {
       <div className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/hero.jpg')] bg-cover bg-no-repeat ">
         <div className=" w-full lg:w-2/3 space-y-5">
           <h1 className=" text-white font-semibold text-6xl">
-            Elevate Your Inner Foodie with Every Bite.
+            For the love of delicious food
           </h1>
           <p className=" text-white">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis et
-            qui, maxime assumenda repellat corrupti officia dolorum delectus
-            labore deleniti?
+            Come with family & feel the joy of mouthwatering food we always serve delicious foods to our customers
           </p>
-          <Button title="Exploring our menu" />
+          <div className="mt-20">
+            <Link to="/menu">
+              <Button title="View our menu" />
+            </Link>
+          </div>
         </div>
       </div>
       <div className="description mt-20 px-5 lg:px-0 mx-auto w-2/4 text-center">
