@@ -201,7 +201,7 @@ function Contact() {
                   id="phoneNumber"
                   name="phoneNumber"
                   className="w-full px-4 py-3 rounded-lg bg-gray-100 border-transparent focus:border-brightColor focus:bg-white focus:ring-0"
-                  placeholder="ex: +32 498 77 82 91"
+                  placeholder="ex: +32 598 80 83 21"
                   onChange={handleChange}
                   required
                 />

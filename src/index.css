@@ -6,8 +6,11 @@
 
 body {
 font-family: 'Georgia', serif;
-
-
-
+}
+/* Custom CSS */
+@media (max-width: 640px) {
+  .dots {
+    content: ".......................................";
+  }
 }
 
