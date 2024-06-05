@@ -8,12 +8,10 @@ const Home = () => {
     <div className="landing-page">
       <div className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/hero.jpg')] bg-cover bg-no-repeat ">
         <div className="w-full lg:w-2/3 space-y-5">
-          <h1 className="text-white font-semibold text-6xl">
-            Pour l'amour de la nourriture délicieuse
-          </h1>
+          <h1 className="text-white font-semibold text-6xl">Traiteur joy</h1>
           <p className="text-white">
-            Venez en famille et ressentez la joie de savourer une nourriture
-            délicieuse.
+            Nous sommes là pour vous servir des plats délicieux, accompagnés de
+            boissons raffinées.
             <br /> Nous servons toujours des plats savoureux à nos clients.
           </p>
           <div className="mt-20">
@@ -53,7 +51,6 @@ const Home = () => {
           <br className="hidden md:inline" /> et des saveurs uniques
         </span>
       </div>
-   
       <div className="pt-20">
         <div class="flex flex-col lg:flex-row items-center justify-center">
           <div class="flex flex-col justify-left ml-4 sm:mr-10 lg:mr-0 lg:ml-12">
@@ -81,7 +78,6 @@ const Home = () => {
         </div>
       </div>
       ----
-     
       <div className="pt-15">
         <div class="flex flex-col-reverse lg:flex-row items-center justify-center">
           <img
