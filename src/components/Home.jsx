@@ -28,7 +28,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div className="description mt-20 px-5 lg:px-0 mx-auto w-full lg:w-2/3 xl:w-1/2 text-center">
         <p className="text-gray-500  leading-relaxed">
           J'ai conçu ce concept gastronomique pour vous il y a dix ans ! C'est
@@ -48,38 +47,16 @@ const Home = () => {
           <br /> que vous souhaitez me lancer.
         </p>
       </div>
-
-      {/* <div className="description mt-20 px-5 lg:px-0 mx-auto w-2/4 text-center">
-        <p className="text-gray-500 block text-base">
-          J'ai conçu ce concept gastronomique pour vous il y a dix ans ! C'est
-          toujours un réel plaisir de vous accueillir chez nous, dans notre loft
-          <br /> pour un moment de convivialité en cuisine puis à table autour
-          d'un repas que nous préparons ensemble.
-        </p>
-        <p className="mt-10 text-gray-500 block text-base">
-          ✻ Je n'ai pas été formé par un grand chef. L'idée ici est de partager
-          une passion. Le plaisir d'être en cuisine m'a été transmis par
-          <br />
-          mon grand-père, mon Nonno. Mes influences ? L'Italie, avant tout, ses
-          arômes, ses vins et son huile d'olive pour une cuisine simple et
-          authentique.
-          <br /> Plus largement, il s'agit d'une cuisine fraîche, colorée et
-          saine aux accents méditerranéens, mais aussi de répondre à vos envies
-          et aux défis
-          <br /> que vous souhaitez me lancer.
-        </p>
-      </div> */}
-
       <div className="text-center mt-10">
         <span className="text-lg md:text-2xl lg:text-3xl font-bold md:text-left">
           Explorez des plats délicieux
           <br className="hidden md:inline" /> et des saveurs uniques
         </span>
       </div>
-
-      <div className="" style={{ marginTop: "7rem" }}>
+   
+      <div className="pt-20">
         <div class="flex flex-col lg:flex-row items-center justify-center">
-          <div class="flex flex-col justify-left mr-10 lg:mr-0 lg:ml-12">
+          <div class="flex flex-col justify-left ml-4 sm:mr-10 lg:mr-0 lg:ml-12">
             <span class="block text-left text-3xl font-bold text-gray-800 mb-4">
               Création d'Expériences
               <br /> Culinaires Exceptionnelles
@@ -103,15 +80,16 @@ const Home = () => {
           ></img>
         </div>
       </div>
-
-      <div className="" style={{ marginTop: "7rem" }}>
+      ----
+     
+      <div className="pt-15">
         <div class="flex flex-col-reverse lg:flex-row items-center justify-center">
           <img
             src="http://localhost:5173/src/assets/img/img2.jpg"
             class="w-full lg:w-2/5 mt-8 lg:mt-0 rounded-lg"
           ></img>
 
-          <div class="flex flex-col justify-left ml-0 lg:ml-12 mt-8 lg:mt-0">
+          <div class="flex flex-col justify-left ml-4 sm:ml-8 lg:ml-12 mt-8 lg:mt-0">
             <span class="block text-left text-3xl font-bold text-gray-800 mb-4">
               Création de Moments
               <br class="hidden lg:inline" />
@@ -131,7 +109,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div className="flex flex-col lg:flex-row justify-center items-center lg:px-32 px-5 mt-20">
         <img src={img} alt="img" />
 
@@ -158,7 +135,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <div className="ml-4 md:ml-16 mr-4 md:mr-16 p-10 md:p-24 flex flex-col md:flex-row items-center bg-gradient-to-br from-gray-100 to-blue-50 shadow-lg rounded-2xl mt-6 md:mt-12   ">
         <span className="mr-8 md:w-3/5 md:mr-0 md:mt-0 text-center md:text-left ">
           <h2 className="text-2xl md:text-2xl font-extrabold text-gray-800 mb-6 leading-tight">
