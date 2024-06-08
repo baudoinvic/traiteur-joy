@@ -2,9 +2,9 @@
 
 import React from "react";
 import DishesCard from "../layouts/DishesCard";
-import menu1 from "../assets/img/menu1.jpg";
-import menu2 from "../assets/img/menu2.jpg";
-import menu3 from "../assets/img/menu3.jpg";
+// import menu1 from "../assets/img/menu1.jpg";
+// import menu2 from "../assets/img/menu2.jpg";
+// import menu3 from "../assets/img/menu3.jpg";
 
 const Menu = () => {
   return (

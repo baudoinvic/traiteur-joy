@@ -1,43 +1,124 @@
 
-
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import traite from "../assets/img/traite.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleDropdown = (index) => {
+    setActiveDropdown(activeDropdown === index ? null : index);
+  };
 
-  // Navigation items shared between desktop and mobile
   const navItems = [
     { to: "/home", text: "Accueil" },
     { to: "/dishes", text: "Cours de cuisine" },
     { to: "/about", text: "À propos de nous" },
-    { to: "/menu", text: "Notre Menu" },
-    { to: "/review", text: "Menu Général" },
+    {
+      text: "Menu",
+      dropdown: [
+        { to: "/menu", text: "Notre Menu" },
+        { to: "/review", text: "Menu Général" },
+        { to: "/gallery", text: "Galerie" },
+      ],
+    },
     { to: "/contact", text: "Contactez-nous" },
   ];
 
-  // Function to render navigation links
   const renderNavLinks = (isMobile = false) => (
     <>
-      {navItems.map(({ to, text }) => (
-        <Link
-          key={to}
-          to={to}
-          className={`
-            ${
-              isMobile
-                ? "block w-full my-2 px-8 py-4 text-center text-lg font-medium text-white hover:bg-gray-700 transition-colors"
-                : "text-gray-600 hover:text-brightColor transition-colors"
-            }
-          `}
-          onClick={isMobile ? toggleMenu : null}
-        >
-          {text}
-        </Link>
+      {navItems.map(({ to, text, dropdown }, index) => (
+        <div key={to || text} className="relative">
+          {dropdown ? (
+            <div className="group inline-block w-full">
+              <button
+                className={`
+                  ${
+                    isMobile
+                      ? "block w-full my-2 px-8 py-4 text-center text-lg font-medium text-white hover:bg-gray-700 transition-colors"
+                      : "text-gray-600 hover:text-brightColor transition-colors py-2 px-4 rounded-md inline-flex items-center"
+                  }
+                `}
+                onClick={
+                  isMobile
+                    ? () => toggleDropdown(index)
+                    : () =>
+                        setActiveDropdown(
+                          activeDropdown === index ? null : index
+                        )
+                }
+              >
+                <span>{text}</span>
+                {!isMobile || activeDropdown !== index ? (
+                  <svg
+                    className={`${
+                      isMobile
+                        ? "ml-2 h-5 w-5 transition-transform"
+                        : "ml-2 h-5 w-5 transition-transform group-hover:rotate-180"
+                    } transform transition`}
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                ) : null}
+              </button>
+              {((isMobile && activeDropdown === index) ||
+                (!isMobile && activeDropdown === index)) && (
+                <div
+                  className={`${
+                    isMobile
+                      ? "block w-full"
+                      : "absolute left-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                  }`}
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="menu-button"
+                >
+                  <div className="py-1" role="none">
+                    {dropdown.map(({ to, text }) => (
+                      <Link
+                        key={to}
+                        to={to}
+                        className={`${
+                          isMobile
+                            ? "block w-full my-2 px-8 py-4 text-center text-lg font-medium text-white hover:bg-gray-700 transition-colors"
+                            : "text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-brightColor transition-colors"
+                        }`}
+                        role="menuitem"
+                        onClick={isMobile ? toggleMenu : null}
+                      >
+                        {text}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          ) : (
+            <Link
+              to={to}
+              className={`
+                ${
+                  isMobile
+                    ? "block w-full my-2 px-8 py-4 text-center text-lg font-medium text-white hover:bg-gray-700 transition-colors"
+                    : "text-gray-600 hover:text-brightColor transition-colors py-2 px-4 rounded-md"
+                }
+              `}
+              onClick={isMobile ? toggleMenu : null}
+            >
+              {text}
+            </Link>
+          )}
+        </div>
       ))}
     </>
   );
@@ -116,7 +197,7 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Navigation Links */}
-            <div className="flex flex-col items-stretch justify-center h-full pb-16">
+            <div className="flex flex-col items-center justify-center h-full pb-16">
               {renderNavLinks(true)}
             </div>
           </div>
