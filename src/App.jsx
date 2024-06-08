@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Dishes from "./components/Dishes";
 import Review from "./components/Review";
 import Contact from "./components/Contact";
+import Gallery from "./components/Gallery";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/review" element={<Review />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
