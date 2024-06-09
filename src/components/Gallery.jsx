@@ -1,6 +1,6 @@
 
 import React from "react";
-import pic1 from "../assets/img/pic1.jpg";
+// import pic1 from "../assets/img/pic1.jpg";
 import pic2 from "../assets/img/pic2.jpg";
 import pic3 from "../assets/img/pic3.jpg";
 import pic4 from "../assets/img/pic4.jpg";
@@ -16,6 +16,7 @@ import pic13 from "../assets/img/pic13.jpg";
 import pic14 from "../assets/img/pic14.jpg";
 import pic15 from "../assets/img/pic15.jpg";
 import pic16 from "../assets/img/pic16.jpg";
+import pic17 from "../assets/img/pic17.jpg";
 
 const Gallery = () => {
   return (
@@ -24,11 +25,11 @@ const Gallery = () => {
         Traiteur Joy Galerie
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <img
+        {/* <img
           src={pic1}
           alt="pic1"
           className="w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105"
-        />
+        /> */}
         <img
           src={pic2}
           alt="pic2"
@@ -102,6 +103,11 @@ const Gallery = () => {
         <img
           src={pic16}
           alt="pic16"
+          className="w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105"
+        />
+        <img
+          src={pic17}
+          alt="pic17"
           className="w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105"
         />
       </div>
