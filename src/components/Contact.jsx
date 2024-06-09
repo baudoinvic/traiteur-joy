@@ -232,7 +232,6 @@ function Contact() {
                 Envoyer le Message
               </button>
             </form>
-            {/* <ToastContainer  /> */}
             <ToastContainer className="pt-40" />
           </div>
         </div>
