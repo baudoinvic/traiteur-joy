@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../assets/img/about.png";
 import Button from "../layouts/Button";
+import funy from "../assets/img/funy.jpg";
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
         <div className="flex flex-col lg:flex-row items-center space-y-12 lg:space-y-0 lg:space-x-16">
           <div className="lg:w-1/2 relative group">
             <img
-              src="http://localhost:5173/src/assets/img/img2.jpg"
+              src={funy}
               alt="Restaurant Image"
               className="rounded-lg shadow-xl transform transition duration-500 group-hover:scale-105 group-hover:shadow-2xl"
             />

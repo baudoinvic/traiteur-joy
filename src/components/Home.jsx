@@ -2,11 +2,11 @@ import React from "react";
 import Button from "../layouts/Button";
 import img from "../assets/img/about.png";
 import { Link } from "react-router-dom";
+import funy from "../assets/img/funy.jpg";
 
 const Home = () => {
   return (
     <div className="landing-page">
-   
       <div className="min-h-[95vh] flex flex-col justify-center items-start lg:items-start lg:px-32 px-5 bg-[url('./assets/img/pic21.jpg')] bg-cover bg-center bg-no-repeat relative">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="w-full lg:w-2/3 space-y-8 z-10 text-white">
@@ -30,26 +30,39 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="description mt-20 px-5 lg:px-0 mx-auto w-full lg:w-2/3 xl:w-1/2 text-center">
-        <p className="text-gray-500  leading-relaxed">
-          J'ai conçu ce concept gastronomique pour vous il y a dix ans ! C'est
-          toujours un réel plaisir de vous accueillir chez nous, dans notre loft
-          <br /> pour un moment de convivialité en cuisine puis à table autour
-          d'un repas que nous préparons ensemble.
-        </p>
-        <p className="mt-10 text-gray-500  leading-relaxed">
-          ✻ Je n'ai pas été formé par un grand chef. L'idée ici est de partager
-          une passion. Le plaisir d'être en cuisine m'a été transmis par
-          <br /> mon grand-père, mon Nonno. Mes influences ? L'Italie, avant
-          tout, ses arômes, ses vins et son huile d'olive pour une cuisine
-          simple et authentique.
-          <br /> Plus largement, il s'agit d'une cuisine fraîche, colorée et
-          saine aux accents méditerranéens, mais aussi de répondre à vos envies
-          et aux défis
-          <br /> que vous souhaitez me lancer.
-        </p>
+ 
+      <div className="mt-20 px-5 lg:px-16 mx-auto w-full">
+        <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-12">
+          <div className="lg:w-1/2">
+            <img
+              src={funy}
+              alt="Concept gastronomique"
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
+          <div className="lg:w-1/2 space-y-6 text-left">
+            <p className="text-gray-700 leading-relaxed">
+              J'ai conçu ce concept gastronomique pour vous il y a dix ans !
+              C'est toujours un réel plaisir de vous accueillir chez nous, dans
+              notre loft pour un moment de convivialité en cuisine puis à table
+              autour d'un repas que nous préparons ensemble.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              ✻ Je n'ai pas été formé par un grand chef. L'idée ici est de
+              partager une passion. Le plaisir d'être en cuisine m'a été
+              transmis par mon grand-père, mon Nonno. Mes influences ? L'Italie,
+              avant tout, ses arômes, ses vins et son huile d'olive pour une
+              cuisine simple et authentique.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Plus largement, il s'agit d'une cuisine fraîche, colorée et saine
+              aux accents méditerranéens, mais aussi de répondre à vos envies et
+              aux défis que vous souhaitez me lancer.
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="text-center mt-10">
+      <div className="text-center mt-20">
         <span className="text-lg md:text-2xl lg:text-3xl font-bold md:text-left">
           Explorez des plats délicieux
           <br className="hidden md:inline" /> et des saveurs uniques
@@ -109,29 +122,52 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-center items-center lg:px-32 px-5 mt-20">
-        <img src={img} alt="img" />
-
-        <div className="space-y-4 lg:pt-14">
-          <h1 className="font-semibold text-4xl text-center md:text-start">
-            Pourquoi Nous Choisir ?
-          </h1>
-          <p className="text-gray-500 block">
-            Nous croyons que chaque repas doit être une expérience. Notre
-            passion pour l'excellence culinaire et notre engagement envers la
-            qualité nous ont fait devenir un favori parmi les amateurs de bonne
-            cuisine. Voici pourquoi vous devriez nous choisir. Notre menu
-            propose un mélange de plats traditionnels et contemporains, élaborés
-            avec les meilleurs ingrédients. De nos plats signatures
-          </p>
-          <p className="text-gray-500 block">
-            Notre restaurant est conçu pour offrir un environnement chaleureux
-            et accueillant où vous pouvez vous détendre et apprécier votre
-            repas. Que vous dîniez en famille, entre amis, ou lors d'un
-            rendez-vous romantique, vous vous sentirez comme chez vous.
-          </p>
-          <div className="flex justify-center lg:justify-start">
-            <Button title="En Savoir Plus" />
+   
+      <div className="py-16 mt-20">
+        <div className="max-w-6xl mx-auto px-5 lg:px-0">
+          <h2 className="text-4xl font-bold text-center mb-12">
+            Notre Expertise Culinaire
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="text-3xl mb-4 text-brightColor">
+                <i className="fas fa-utensils"></i>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Cuisine Raffinée</h3>
+              <p className="text-gray-600">
+                Découvrez nos plats élaborés avec passion, mêlant tradition et
+                innovation culinaire.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="text-3xl mb-4 text-brightColor">
+                <i className="fas fa-wine-glass-alt"></i>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Sélection de Vins</h3>
+              <p className="text-gray-600">
+                Notre cave propose une gamme exquise de vins soigneusement
+                choisis pour accompagner vos mets.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <div className="text-3xl mb-4 text-brightColor">
+                <i className="fas fa-concierge-bell"></i>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">
+                Service Personnalisé
+              </h3>
+              <p className="text-gray-600">
+                Notre équipe attentionnée s'assure que chaque visite soit une
+                expérience mémorable.
+              </p>
+            </div>
+          </div>
+          <div className="text-center mt-12">
+            <Link to="/about">
+              <button className="bg-brightColor text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition duration-300">
+                En Savoir Plus
+              </button>
+            </Link>
           </div>
         </div>
       </div>
