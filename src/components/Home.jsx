@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="landing-page">
-      <div className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/hero.jpg')] bg-cover bg-no-repeat ">
+      <div className=" min-h-screen flex flex-row justify-between items-center lg:px-32 px-5 bg-[url('./assets/img/pic21.jpg')] bg-cover bg-no-repeat ">
         <div className="w-full lg:w-2/3 space-y-5">
           <h1 className="text-white font-semibold text-6xl">Traiteur joy</h1>
           <p className="text-white">

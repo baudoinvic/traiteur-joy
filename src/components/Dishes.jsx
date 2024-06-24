@@ -24,9 +24,9 @@ const Dishes = () => {
 
       <div id="courses" className="container mx-auto px-4 py-16">
         <div className="mb-16">
-          <h3 className="text-3xl md:text-4xl font-bold mb-6 text-center text-brightColor">
+          {/* <h3 className="text-3xl md:text-4xl font-bold mb-6 text-center text-brightColor">
             Cours pour la récolte été, automne, 2024-2025
-          </h3>
+          </h3> */}
           <p className="text-gray-600 text-center max-w-3xl mx-auto">
             Rejoignez-nous pour une expérience unique d'apprentissage dans le
             monde passionnant du jardinage et de la cuisine. Nos cours vous
