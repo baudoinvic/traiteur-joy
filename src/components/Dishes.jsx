@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 
 const Dishes = () => {
   return (
-   
-
     <div className="cooking-course pt-20">
       <div
         className="hero-section h-96 bg-cover bg-center flex flex-col justify-center items-center lg:px-32 px-5 relative"
@@ -16,21 +14,24 @@ const Dishes = () => {
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <h1 className="text-4xl md:text-5xl lg:text-2xl font-bold text-white text-center pt-24 pb-10 relative z-10 leading-tight">
-          COURS POUR POTAGER
-          <br className="hidden md:block" /> ET JARDIN DEPUIS SON
-          <br className="hidden md:block" /> IMPLANTATION ET ENTRETIENT
+          COURS POUR LE DRESSAGE
+          <br className="hidden md:block" /> L'ART CULINAIRE
+          <br className="hidden md:block" /> EN ACTION
         </h1>
       </div>
 
       <div id="courses" className="container mx-auto px-4 py-16">
+       
+
         <div className="mb-16">
-          {/* <h3 className="text-3xl md:text-4xl font-bold mb-6 text-center text-brightColor">
-            Cours pour la récolte été, automne, 2024-2025
-          </h3> */}
+          <h3 className="text-3xl md:text-4xl font-bold mb-6 text-center text-brightColor">
+            Explorez l'Art Culinaire avec Nos Cours
+          </h3>
           <p className="text-gray-600 text-center max-w-3xl mx-auto">
-            Rejoignez-nous pour une expérience unique d'apprentissage dans le
-            monde passionnant du jardinage et de la cuisine. Nos cours vous
-            guideront de la graine à l'assiette.
+            Plongez dans un voyage gastronomique exceptionnel. Nos cours de
+            cuisine vous initient aux secrets des grands chefs, de la sélection
+            des ingrédients aux techniques de dressage sophistiquées. Venez
+            éveiller vos sens et libérer votre créativité culinaire.
           </p>
         </div>
 
@@ -166,8 +167,6 @@ const Dishes = () => {
             >
               contact nous pur plus d'infos
             </a>
-
-          
           </div>
         </div>
       </div>

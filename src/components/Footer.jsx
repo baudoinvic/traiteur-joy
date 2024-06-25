@@ -10,10 +10,44 @@ import {
   
   FaPhoneAlt,
 } from "react-icons/fa";
+import { useState } from "react";
 
 const Footer = () => {
-  return (
+
  
+  const [email, setEmail] = useState("");
+
+  const handleChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      let token = localStorage.getItem("token");
+      console.log("Newsletter Subscription Email:", email);
+
+      const response = await axios({
+        url: "https://auction-website-auji.onrender.com/api/v1/subscriptions",
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        data: JSON.stringify({ email }),
+      });
+
+      console.log("Subscription Response Data:", response.data);
+      toast.success("Merci de vous être abonné à notre newsletter");
+    } catch (error) {
+      console.error("Error:", error.response ? error.response.data : error);
+      toast.error("Failed to subscribe. Please try again later.");
+    }
+  }
+
+
+  return (
     <div className="bg-gray-900 text-white rounded-t-3xl mt-8 md:mt-0 shadow-2xl">
       <div className="container mx-auto p-8 md:p-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -38,6 +72,7 @@ const Footer = () => {
                 Suivez Notre Actualité
               </p>
               <form
+                onSubmit={handleSubmit}
                 action="/abonnement"
                 method="post"
                 className="flex flex-col space-y-3"
@@ -45,6 +80,9 @@ const Footer = () => {
                 <input
                   type="email"
                   name="email"
+                  id="email"
+                  value={email}
+                  onChange={handleChange}
                   placeholder="Entrez votre email"
                   required
                   className="px-4 py-3 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-brightColor"
@@ -164,7 +202,6 @@ const Footer = () => {
             <p className="text-gray-400 mb-4 md:mb-0">
               © 2024 Traiteur Joy. Tous droits réservés.
             </p>
-          
           </div>
         </div>
       </div>
