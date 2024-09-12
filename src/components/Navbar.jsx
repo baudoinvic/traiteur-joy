@@ -128,16 +128,19 @@ const Navbar = () => {
       <div className="bg-white shadow-lg">
         <div className="flex flex-row justify-between items-center p-4 md:px-8 lg:px-16 xl:px-32 transition-all duration-300">
           {/* Logo */}
-          <div className="flex flex-row items-center cursor-pointer space-x-3">
-            <img
-              src={traite}
-              alt="Restaurant Icon"
-              className="w-10 h-10 md:w-16 md:h-10 object-contain"
-            />
-            <h1 className="text-lg md:text-xl font-bold text-gray-800 hover:text-brightColor transition-colors">
-              Traiteur Joy
-            </h1>
-          </div>
+
+          <Link to="/home">
+            <div className="flex flex-row items-center cursor-pointer space-x-3">
+              <img
+                src={traite}
+                alt="Restaurant Icon"
+                className="w-10 h-10 md:w-16 md:h-10 object-contain"
+              />
+              <h1 className="text-lg md:text-xl font-bold text-gray-800 hover:text-brightColor transition-colors">
+                Traiteur Joy
+              </h1>
+            </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex flex-row items-center text-base lg:text-lg font-medium space-x-6 lg:space-x-8">
