@@ -7,8 +7,7 @@ const ReviewCard = (props) => {
         <p className=" text-lightText">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In
           consectetur error, dolores quae ipsa quos enim corporis magni
-          obcaecati tempore natus eos, libero ducimus nulla neque eaque maxime
-          nam molestias?
+          obcaecati tempore natus eos, 
         </p>
       </div>
 
