@@ -30,7 +30,6 @@ const Home = () => {
           </div>
         </div>
       </div>
- 
       <div className="mt-20 px-5 lg:px-16 mx-auto w-full">
         <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-12">
           <div className="lg:w-1/2">
@@ -122,7 +121,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-   
       <div className="py-16 mt-20">
         <div className="max-w-6xl mx-auto px-5 lg:px-0">
           <h2 className="text-4xl font-bold text-center mb-12">
@@ -171,24 +169,23 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="ml-4 md:ml-16 mr-4 md:mr-16 p-10 md:p-24 flex flex-col md:flex-row items-center bg-gradient-to-br from-gray-100 to-blue-50 shadow-lg rounded-2xl mt-6 md:mt-12   ">
-        <span className="mr-8 md:w-3/5 md:mr-0 md:mt-0 text-center md:text-left ">
-          <h2 className="text-2xl md:text-2xl font-extrabold text-gray-800 mb-6 leading-tight">
+    
+      <div className="w-full md:w-4/5 mx-auto px-4 md:px-0 flex flex-col md:flex-row mb-20 pt-10">
+        <span className="mb-6 md:mb-0 md:w-3/5 text-center md:text-left">
+          <h2 className="text-xl md:text-2xl font-extrabold text-gray-800 mb-4 leading-tight">
             Collaborons pour donner vie à vos idées
           </h2>
-          <p className="text-base md:text-lg leading-relaxed text-gray-700">
+          <p className="text-lg  text-gray-700">
             Bonjour ! C'est le meilleur moyen de nous contacter pour collaborer
             sur votre nouveau projet. Si vous avez des questions, n'hésitez pas
             à nous joindre via notre adresse e-mail officielle ou notre numéro
-            de téléphone. Nous sommes également actifs sur divers réseaux
-            sociaux, alors connectez-vous avec nous sur Facebook, Instagram ou
-            LinkedIn. Nous avons hâte d'avoir de vos nouvelles et d'explorer
+            de téléphone. Nous avons hâte d'avoir de vos nouvelles et d'explorer
             ensemble de nouvelles opportunités passionnantes.
           </p>
         </span>
         <Link
           to="/contact"
-          className="flex items-center justify-center mt-8 md:mt-0 md:ml-auto w-full md:w-2/5"
+          className="flex items-center justify-center md:ml-auto w-full md:w-2/5"
         >
           <button className="bg-brightColor text-white font-bold py-4 px-8 rounded-full shadow-md transform hover:scale-110 transition-transform duration-300 w-full md:w-auto">
             Contactez-nous

@@ -14,6 +14,7 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div>
         <Navbar />
 
@@ -27,7 +28,6 @@ const App = () => {
             <Route path="/review" element={<Review />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/ScrollToTop" element={<ScrollToTop />} />
           </Routes>
         </main>
 
