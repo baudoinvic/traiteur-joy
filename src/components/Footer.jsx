@@ -103,28 +103,28 @@ const Footer = () => {
             </h2>
             <nav className="space-y-3">
               <Link
-                to="/plats"
+                to="/home"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                Nos Plats
+                Acceuil
               </Link>
               <Link
-                to="/a-propos"
+                to="/about"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                À Propos
+                À propos de nous
               </Link>
               <Link
                 to="/menu"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                Menu
+                Notre Menu
               </Link>
               <Link
-                to="/carte-generale"
+                to="/contact"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                Carte Générale
+                Contactez-nous
               </Link>
             </nav>
           </div>
