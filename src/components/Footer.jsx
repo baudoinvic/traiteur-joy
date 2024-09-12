@@ -131,32 +131,26 @@ const Footer = () => {
 
           <div>
             <h2 className="text-2xl font-bold text-brightColor mb-6">
-              Services
+              Liens importants
             </h2>
             <nav className="space-y-3">
               <Link
-                to="/traiteur"
+                to="/review"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                Services Traiteur
+                Menu General
               </Link>
               <Link
-                to="/cours-cuisine"
+                to="/dishes"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
                 Cours de Cuisine
               </Link>
               <Link
-                to="/evenements"
+                to="/gallery"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                Événements Privés
-              </Link>
-              <Link
-                to="/livraison"
-                className="block text-gray-300 hover:text-brightColor transition duration-300"
-              >
-                Livraison à Domicile
+                Notre Galerie
               </Link>
             </nav>
           </div>
