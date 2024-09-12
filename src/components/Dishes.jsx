@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import dish from "../assets/img/dish.jpeg";
 
 
 const Dishes = () => {
@@ -8,8 +9,7 @@ const Dishes = () => {
       <div
         className="hero-section h-96 bg-cover bg-center flex flex-col justify-center items-center lg:px-32 px-5 relative"
         style={{
-          backgroundImage:
-            "url('http://swingncook.be/wp-content/uploads/2022/01/90dff0b2-6159-4863-8f66-436ff9bb5b68_1_105_c-1.jpeg')",
+          backgroundImage: `url(${dish})`, 
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -21,8 +21,6 @@ const Dishes = () => {
       </div>
 
       <div id="courses" className="container mx-auto px-4 py-16">
-       
-
         <div className="mb-16">
           <h3 className="text-3xl md:text-4xl font-bold mb-6 text-center text-brightColor">
             Explorez l'Art Culinaire avec Nos Cours
