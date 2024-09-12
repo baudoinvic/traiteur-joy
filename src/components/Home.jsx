@@ -1,6 +1,8 @@
 import React from "react";
 import Button from "../layouts/Button";
 import img from "../assets/img/about.png";
+import food from "../assets/img/food.jpg";
+import food1 from "../assets/img/food1.jpg";
 import { Link } from "react-router-dom";
 import funy from "../assets/img/funy.jpg";
 
@@ -88,7 +90,7 @@ const Home = () => {
           </div>
 
           <img
-            src="http://localhost:5173/src/assets/img/img5.jpg"
+            src={food1}
             class="w-full lg:w-2/5 mt-8 lg:mt-0 ml-0 lg:ml-12 rounded-lg"
           ></img>
         </div>
@@ -97,7 +99,7 @@ const Home = () => {
       <div className="pt-15">
         <div class="flex flex-col-reverse lg:flex-row items-center justify-center">
           <img
-            src="http://localhost:5173/src/assets/img/img2.jpg"
+            src={food}
             class="w-full lg:w-2/5 mt-8 lg:mt-0 rounded-lg"
           ></img>
 
