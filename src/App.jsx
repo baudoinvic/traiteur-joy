@@ -9,6 +9,7 @@ import Dishes from "./components/Dishes";
 import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/review" element={<Review />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/ScrollToTop" element={<ScrollToTop />} />
           </Routes>
         </main>
 
