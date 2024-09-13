@@ -1,7 +1,6 @@
 import React from "react";
 import ReviewCard from "../layouts/ReviewCard";
 
-
 const Review = () => {
   return (
     <div className=" min-h-screen flex flex-col items-center justify-center md:px-32 px-5 pt-20">
