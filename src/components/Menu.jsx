@@ -1,8 +1,6 @@
 
-
 import React from "react";
 import DishesCard from "../layouts/DishesCard";
-
 
 const Menu = () => {
   return (
