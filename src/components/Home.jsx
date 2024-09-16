@@ -46,7 +46,7 @@ const Home = () => {
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
-        
+
           <div className="lg:w-1/2 space-y-6 text-left">
             <p className="text-gray-700 leading-relaxed">
               {t("conceptGastronomique")}
@@ -61,9 +61,14 @@ const Home = () => {
         </div>
       </div>
       <div className="text-center mt-20">
-        <span className="text-lg md:text-2xl lg:text-3xl font-bold md:text-left">
+        {/* <span className="text-lg md:text-2xl lg:text-3xl font-bold md:text-left">
           Explorez des plats délicieux
           <br className="hidden md:inline" /> et des saveurs uniques
+        </span> */}
+        <span className="text-lg md:text-2xl lg:text-3xl font-bold md:text-left">
+          {t("explorezPlats")}
+          <br className="hidden md:inline" />
+          {t("saveursUniques")}
         </span>
       </div>
       <div className="pt-20">
