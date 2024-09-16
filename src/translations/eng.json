@@ -113,5 +113,45 @@
       "perSession": "per session"
     },
     "contact": "Contact us for more information"
-  }
+  },
+
+  "contact": {
+    "hero": {
+      "title": "Let's Get in Touch",
+      "description": "Have a question or need advice? We're here to help. Fill out the form below and let's start a conversation that could lead to culinary brilliance."
+    },
+    "info": {
+      "title": "We'd Love to Hear from You",
+      "description": "Whether you're a novice cook or a seasoned chef, your journey with us begins here. Share your thoughts, and let's create something extraordinary together."
+    },
+    "address": {
+      "title": "Our Address",
+      "line1": "Rue Joseph Stevens 28, 1000 Brussels",
+      "line2": "VAT 0744.562.496"
+    },
+    "email": {
+      "title": "Write to Us",
+      "address": "traiteurjoy@gmail.com",
+      "action": "Send an Email"
+    },
+    "phone": {
+      "title": "Call Us",
+      "number": "+32 498 77 82 91",
+      "action": "Call Now"
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "firstname": "First Name",
+      "firstnamePlaceholder": "e.g., John",
+      "lastname": "Last Name",
+      "lastnamePlaceholder": "e.g., Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "you@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "e.g., +32 598 80 83 21",
+      "message": "Your Message",
+      "messagePlaceholder": "Tell us about your culinary dreams...",
+      "submit": "Send Message"
+    }
+}
 }

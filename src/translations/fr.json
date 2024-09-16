@@ -113,5 +113,45 @@
       "perSession": "par session"
     },
     "contact": "Contactez-nous pour plus d'informations"
-  }
+  },
+  
+  "contact": {
+    "hero": {
+      "title": "Entrons en Contact",
+      "description": "Vous avez une question ou besoin de conseils ? Nous sommes là pour vous aider. Remplissez le formulaire ci-dessous et commençons une conversation qui pourrait mener à une brillance culinaire."
+    },
+    "info": {
+      "title": "Nous Serions Ravis de Vous Entendre",
+      "description": "Que vous soyez novice en cuisine ou chef chevronné, votre voyage avec nous commence ici. Partagez vos pensées, et créons ensemble quelque chose d'extraordinaire."
+    },
+    "address": {
+      "title": "Notre Adresse",
+      "line1": "Rue Joseph Stevens 28, 1000 Bruxelles",
+      "line2": "TVA 0744.562.496"
+    },
+    "email": {
+      "title": "Écrivez-nous",
+      "address": "traiteurjoy@gmail.com",
+      "action": "Envoyer un Email"
+    },
+    "phone": {
+      "title": "Appelez-nous",
+      "number": "+32 498 77 82 91",
+      "action": "Appeler Maintenant"
+    },
+    "form": {
+      "title": "Envoyez-nous un Message",
+      "firstname": "Prénom",
+      "firstnamePlaceholder": "ex: Marie",
+      "lastname": "Nom",
+      "lastnamePlaceholder": "ex: Dupont",
+      "email": "Adresse Email",
+      "emailPlaceholder": "vous@example.com",
+      "phone": "Numéro de Téléphone",
+      "phonePlaceholder": "ex: +32 598 80 83 21",
+      "message": "Votre Message",
+      "messagePlaceholder": "Parlez-nous de vos rêves culinaires...",
+      "submit": "Envoyer le Message"
+    }
+}
 }
