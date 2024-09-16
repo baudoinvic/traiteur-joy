@@ -43,5 +43,75 @@
   "gastronomieFine": "Fine Gastronomy",
   "bienvenue": "Welcome to Traiteur Joy, where we celebrate the art of fine gastronomy and exceptional culinary experiences. Our restaurant is a labor of love, born from a passion to create unforgettable moments through exquisite flavors and impeccable service.",
   "citation": "\"Each meal is a sensory journey that tantalizes the palate and delights the senses.\"",
-  "croyance": "At Traiteur Joy, we believe that dining is not just about satisfying hunger. It's an immersion into a world of flavors. Our talented chefs meticulously craft each dish, using only the finest and freshest ingredients, ensuring that every bite is a masterpiece."
+  "croyance": "At Traiteur Joy, we believe that dining is not just about satisfying hunger. It's an immersion into a world of flavors. Our talented chefs meticulously craft each dish, using only the finest and freshest ingredients, ensuring that every bite is a masterpiece.",
+  "dishes": {
+    "hero": {
+      "title1": "PLATING COURSES",
+      "title2": "CULINARY ART",
+      "title3": "IN ACTION"
+    },
+    "explore": {
+      "title": "Explore Culinary Art with Our Courses",
+      "description": "Dive into an exceptional gastronomic journey. Our cooking classes introduce you to the secrets of great chefs, from ingredient selection to sophisticated plating techniques. Come awaken your senses and unleash your culinary creativity."
+    },
+    "garden": {
+      "title": "Garden & Spices",
+      "item1": "Spices and herbs (e.g., basil)",
+      "item2": "Organic vegetables when possible",
+      "item3": "+-6 half-days over 3 months",
+      "item4": "From seed to harvest",
+      "description": "Explanation of traditional or square garden models. Choice among different types: herbal teas, perennial vegetables, aromatics, for children, and barbecue."
+    },
+    "kitchen": {
+      "title": "Kitchen & Garden",
+      "item1": "Advice on cultivation according to preferences",
+      "item2": "French, Belgian, Mediterranean, African cuisine",
+      "item3": "2-3h of explanations and advice",
+      "item4": "Flowers, seasonal and exotic trees",
+      "rate": "RATE",
+      "rateDescription": "38 to 58 € per hour. Private lessons or work at home. By a certified cook in Brussels, former Biochemistry student and breeder."
+    },
+    "fish": {
+      "title1": "SMOKING AND",
+      "title2": "FISH PREPARATION COURSES",
+      "description": "Master the delicate art of smoking and discover professional techniques to elevate your fish dishes."
+    },
+    "techniques": {
+      "title": "Techniques and Recipes on the Program",
+      "description": "From fish selection to final presentation, each step is an opportunity to learn and improve."
+    },
+    "basic": {
+      "title": "Basic Techniques",
+      "item1": "Hot smoking of fresh salmon (+-55% cheaper)",
+      "item2": "Dressing various fish",
+      "item3": "Preparation of seafood (e.g., grey shrimp)"
+    },
+    "signature": {
+      "title": "Signature Dishes",
+      "item1": "Salmon cake",
+      "item2": "Cod roe and taramasalata",
+      "item3": "Fish kefta",
+      "item4": "Asparagus with smoked salmon, black truffle sauce"
+    },
+    "specialties": {
+      "title": "Specialties & Pairings",
+      "item1": "Cauliflower mousse with curry (for shrimp)",
+      "item2": "Grilled or fried calamari",
+      "item3": "Homemade sauces: green, tartar",
+      "item4": "Garnishes: cucumber, tomato, olives"
+    },
+    "instructor": {
+      "title": "Your Instructor",
+      "description": "With a unique background combining cooking, biochemistry, and breeding, your instructor brings a multidimensional perspective to each course. Her experience in market gardening and gardening ensures a thorough understanding of ingredients, from farm to table.",
+      "item1": "Certified cook in Brussels",
+      "item2": "Former Biochemistry student",
+      "item3": "Experience in breeding and market gardening"
+    },
+    "rate": {
+      "title": "Rate",
+      "price": "38€ - 58€",
+      "perSession": "per session"
+    },
+    "contact": "Contact us for more information"
+  }
 }

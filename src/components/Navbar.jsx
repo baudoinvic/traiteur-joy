@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import traite from "../assets/img/traite.png";
-import { useTranslation } from "react-i18next"; // Import translation hook
+import { useTranslation } from "react-i18next"; 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const { t, i18n } = useTranslation(); // Destructure i18n for changing language
+  const { t, i18n } = useTranslation(); 
   
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);

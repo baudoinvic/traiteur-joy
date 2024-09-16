@@ -43,5 +43,75 @@
   "gastronomieFine": "Gastronomie Fine",
   "bienvenue": "Bienvenue chez Traiteur Joy, où nous célébrons l'art de la gastronomie fine et des expériences culinaires exceptionnelles. Notre restaurant est un travail d'amour, né d'une passion pour créer des moments inoubliables à travers des saveurs exquises et un service impeccable.",
   "citation": "\"Chaque repas est un voyage sensoriel qui titille le palais et ravit les sens.\"",
-  "croyance": "Chez Traiteur Joy, nous croyons que le repas ne consiste pas seulement à satisfaire la faim. C'est une immersion dans un monde de saveurs. Nos chefs talentueux élaborent méticuleusement chaque plat, en utilisant uniquement les ingrédients les plus fins et les plus frais, garantissant que chaque bouchée soit un chef-d'œuvre."
+  "croyance": "Chez Traiteur Joy, nous croyons que le repas ne consiste pas seulement à satisfaire la faim. C'est une immersion dans un monde de saveurs. Nos chefs talentueux élaborent méticuleusement chaque plat, en utilisant uniquement les ingrédients les plus fins et les plus frais, garantissant que chaque bouchée soit un chef-d'œuvre.",
+  "dishes": {
+    "hero": {
+      "title1": "COURS POUR LE DRESSAGE",
+      "title2": "L'ART CULINAIRE",
+      "title3": "EN ACTION"
+    },
+    "explore": {
+      "title": "Explorez l'Art Culinaire avec Nos Cours",
+      "description": "Plongez dans un voyage gastronomique exceptionnel. Nos cours de cuisine vous initient aux secrets des grands chefs, de la sélection des ingrédients aux techniques de dressage sophistiquées. Venez éveiller vos sens et libérer votre créativité culinaire."
+    },
+    "garden": {
+      "title": "Potager & Épices",
+      "item1": "Épices et aromates (ex: basilic)",
+      "item2": "Légumes biologiques si possible",
+      "item3": "+-6 demi-journées sur 3 mois",
+      "item4": "De la semence à la récolte",
+      "description": "Explication des modèles de potager traditionnel ou en carré. Choix parmi différents types : tisanes, légumes perpétuels, aromatiques, pour enfants, et barbecue."
+    },
+    "kitchen": {
+      "title": "Cuisine & Jardin",
+      "item1": "Conseil sur la culture selon préférences",
+      "item2": "Cuisine française, belge, méditerranéenne, africaine",
+      "item3": "2-3h d'explications et conseils",
+      "item4": "Fleurs, arbres de saison et exotiques",
+      "rate": "TARIF",
+      "rateDescription": "38 à 58 € par heure. Cours particuliers ou travaux à domicile. Par une cuisinière diplômée à Bruxelles, ancienne étudiante en Biochimie et éleveuse."
+    },
+    "fish": {
+      "title1": "COURS DE FUMAGE ET",
+      "title2": "PRÉPARATION DE POISSONS",
+      "description": "Maîtrisez l'art délicat du fumage et découvrez des techniques professionnelles pour sublimer vos plats de poissons."
+    },
+    "techniques": {
+      "title": "Techniques et Recettes au Programme",
+      "description": "De la sélection du poisson à la présentation finale, chaque étape est une opportunité d'apprendre et de se perfectionner."
+    },
+    "basic": {
+      "title": "Techniques de Base",
+      "item1": "Fumage à chaud du saumon frais (+-55% moins cher)",
+      "item2": "Habillage de divers poissons",
+      "item3": "Préparation de fruits de mer (ex: crevettes grises)"
+    },
+    "signature": {
+      "title": "Plats Signature",
+      "item1": "Gâteau de saumon",
+      "item2": "Œufs de cabillaud et tarama",
+      "item3": "Kefta de poissons",
+      "item4": "Asperges au saumon fumé, sauce truffe noire"
+    },
+    "specialties": {
+      "title": "Spécialités & Accords",
+      "item1": "Mousse de chou-fleur au curry (pour crevettes)",
+      "item2": "Calamars grillés ou frits",
+      "item3": "Sauces maison : verte, tartare",
+      "item4": "Garnitures : concombre, tomate, olives"
+    },
+    "instructor": {
+      "title": "Votre Instructrice",
+      "description": "Forte d'un parcours unique alliant cuisine, biochimie, et élevage, votre instructrice apporte une perspective multidimensionnelle à chaque cours. Son expérience en maraîchage et jardinage garantit une compréhension approfondie des ingrédients, de la terre à l'assiette.",
+      "item1": "Cuisinière diplômée à Bruxelles",
+      "item2": "Ancienne étudiante en Biochimie",
+      "item3": "Expérience en élevage et maraîchage"
+    },
+    "rate": {
+      "title": "Tarif",
+      "price": "38€ - 58€",
+      "perSession": "par session"
+    },
+    "contact": "Contactez-nous pour plus d'informations"
+  }
 }

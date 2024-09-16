@@ -1,130 +1,123 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import dish from "../assets/img/dish.jpeg";
-
+import { useTranslation } from "react-i18next";
 
 const Dishes = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="cooking-course pt-20">
       <div
         className="hero-section h-96 bg-cover bg-center flex flex-col justify-center items-center lg:px-32 px-5 relative"
         style={{
-          backgroundImage: `url(${dish})`, 
+          backgroundImage: `url(${dish})`,
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <h1 className="text-4xl md:text-5xl lg:text-2xl font-bold text-white text-center pt-24 pb-10 relative z-10 leading-tight">
-          COURS POUR LE DRESSAGE
-          <br className="hidden md:block" /> L'ART CULINAIRE
-          <br className="hidden md:block" /> EN ACTION
+          {t("dishes.hero.title1")}
+          <br className="hidden md:block" /> {t("dishes.hero.title2")}
+          <br className="hidden md:block" /> {t("dishes.hero.title3")}
         </h1>
       </div>
 
       <div id="courses" className="container mx-auto px-4 py-16">
         <div className="mb-16">
           <h3 className="text-3xl md:text-4xl font-bold mb-6 text-center text-brightColor">
-            Explorez l'Art Culinaire avec Nos Cours
+            {t("dishes.explore.title")}
           </h3>
           <p className="text-gray-600 text-center max-w-3xl mx-auto">
-            Plongez dans un voyage gastronomique exceptionnel. Nos cours de
-            cuisine vous initient aux secrets des grands chefs, de la sélection
-            des ingrédients aux techniques de dressage sophistiquées. Venez
-            éveiller vos sens et libérer votre créativité culinaire.
+            {t("dishes.explore.description")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
             <h4 className="text-2xl font-semibold text-brightColor mb-4">
-              Potager & Épices
+              {t("dishes.garden.title")}
             </h4>
             <ul className="text-gray-700 space-y-3 list-disc list-inside">
-              <li>Épices et aromates (ex: basilic)</li>
-              <li>Légumes biologiques si possible</li>
-              <li>+-6 demi-journées sur 3 mois</li>
-              <li>De la semence à la récolte</li>
+              <li>{t("dishes.garden.item1")}</li>
+              <li>{t("dishes.garden.item2")}</li>
+              <li>{t("dishes.garden.item3")}</li>
+              <li>{t("dishes.garden.item4")}</li>
             </ul>
             <p className="mt-6 text-gray-700">
-              Explication des modèles de potager traditionnel ou en carré. Choix
-              parmi différents types : tisanes, légumes perpétuels, aromatiques,
-              pour enfants, et barbecue.
+              {t("dishes.garden.description")}
             </p>
           </div>
 
           <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
             <h4 className="text-2xl font-semibold text-brightColor mb-4">
-              Cuisine & Jardin
+              {t("dishes.kitchen.title")}
             </h4>
             <ul className="text-gray-700 space-y-3 list-disc list-inside">
-              <li>Conseil sur la culture selon préférences</li>
-              <li>Cuisine française, belge, méditerranéenne, africaine</li>
-              <li>2-3h d'explications et conseils</li>
-              <li>Fleurs, arbres de saison et exotiques</li>
+              <li>{t("dishes.kitchen.item1")}</li>
+              <li>{t("dishes.kitchen.item2")}</li>
+              <li>{t("dishes.kitchen.item3")}</li>
+              <li>{t("dishes.kitchen.item4")}</li>
             </ul>
             <p className="mt-6 text-gray-700">
-              <span className="font-semibold">TARIF:</span> 38 à 58 € par heure.
-              Cours particuliers ou travaux à domicile. Par une cuisinière
-              diplômée à Bruxelles, ancienne étudiante en Biochimie et éleveuse.
+              <span className="font-semibold">{t("dishes.kitchen.rate")}:</span>{" "}
+              {t("dishes.kitchen.rateDescription")}
             </p>
           </div>
         </div>
 
         <div className="fish-course ">
           <h1 className="text-4xl md:text-5xl lg:text-2xl font-bold  text-center pt-24 pb-10 relative z-10 leading-tight">
-            COURS DE FUMAGE ET
-            <br className="hidden md:block" /> PRÉPARATION DE POISSONS
+            {t("dishes.fish.title1")}
+            <br className="hidden md:block" /> {t("dishes.fish.title2")}
           </h1>
           <p className="text-xl  text-center text-gray-600 ">
-            Maîtrisez l'art délicat du fumage et découvrez des techniques
-            <br />
-            professionnelles pour sublimer vos plats de poissons.
+            {t("dishes.fish.description")}
           </p>
         </div>
 
         <div id="fish-courses" className="container mx-auto px-4 py-16">
           <div className="mb-16">
             <h3 className="text-3xl md:text-4xl font-bold mb-6 text-center text-brightColor">
-              Techniques et Recettes au Programme
+              {t("dishes.techniques.title")}
             </h3>
             <p className="text-gray-600 text-center max-w-3xl mx-auto">
-              De la sélection du poisson à la présentation finale, chaque étape
-              est une opportunité d'apprendre et de se perfectionner.
+              {t("dishes.techniques.description")}
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
               <h4 className="text-2xl font-semibold text-brightColor mb-4">
-                Techniques de Base
+                {t("dishes.basic.title")}
               </h4>
               <ul className="text-gray-700 space-y-3 list-disc list-inside">
-                <li>Fumage à chaud du saumon frais (+-55% moins cher)</li>
-                <li>Habillage de divers poissons</li>
-                <li>Préparation de fruits de mer (ex: crevettes grises)</li>
+                <li>{t("dishes.basic.item1")}</li>
+                <li>{t("dishes.basic.item2")}</li>
+                <li>{t("dishes.basic.item3")}</li>
               </ul>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
               <h4 className="text-2xl font-semibold text-brightColor mb-4">
-                Plats Signature
+                {t("dishes.signature.title")}
               </h4>
               <ul className="text-gray-700 space-y-3 list-disc list-inside">
-                <li>Gâteau de saumon</li>
-                <li>Œufs de cabillaud et tarama</li>
-                <li>Kefta de poissons</li>
-                <li>Asperges au saumon fumé, sauce truffe noire</li>
+                <li>{t("dishes.signature.item1")}</li>
+                <li>{t("dishes.signature.item2")}</li>
+                <li>{t("dishes.signature.item3")}</li>
+                <li>{t("dishes.signature.item4")}</li>
               </ul>
             </div>
 
             <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300">
               <h4 className="text-2xl font-semibold text-brightColor mb-4">
-                Spécialités & Accords
+                {t("dishes.specialties.title")}
               </h4>
               <ul className="text-gray-700 space-y-3 list-disc list-inside">
-                <li>Mousse de chou-fleur au curry (pour crevettes)</li>
-                <li>Calamars grillés ou frits</li>
-                <li>Sauces maison : verte, tartare</li>
-                <li>Garnitures : concombre, tomate, olives</li>
+                <li>{t("dishes.specialties.item1")}</li>
+                <li>{t("dishes.specialties.item2")}</li>
+                <li>{t("dishes.specialties.item3")}</li>
+                <li>{t("dishes.specialties.item4")}</li>
               </ul>
             </div>
           </div>
@@ -133,38 +126,38 @@ const Dishes = () => {
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-2/3 mb-8 md:mb-0 md:pr-8">
                 <h4 className="text-2xl font-bold text-brightColor mb-4">
-                  Votre Instructrice
+                  {t("dishes.instructor.title")}
                 </h4>
                 <p className="text-gray-700 mb-6">
-                  Forte d'un parcours unique alliant cuisine, biochimie, et
-                  élevage, votre instructrice apporte une perspective
-                  multidimensionnelle à chaque cours. Son expérience en
-                  maraîchage et jardinage garantit une compréhension approfondie
-                  des ingrédients, de la terre à l'assiette.
+                  {t("dishes.instructor.description")}
                 </p>
                 <ul className="text-gray-700 space-y-2 list-disc list-inside">
-                  <li>Cuisinière diplômée à Bruxelles</li>
-                  <li>Ancienne étudiante en Biochimie</li>
-                  <li>Expérience en élevage et maraîchage</li>
+                  <li>{t("dishes.instructor.item1")}</li>
+                  <li>{t("dishes.instructor.item2")}</li>
+                  <li>{t("dishes.instructor.item3")}</li>
                 </ul>
               </div>
               <div className="md:w-1/3 text-center">
-                <p className="text-2xl font-bold text-gray-800 mb-4">Tarif</p>
-                <p className="text-4xl font-bold text-brightColor mb-6">
-                  38€ - 58€
+                <p className="text-2xl font-bold text-gray-800 mb-4">
+                  {t("dishes.rate.title")}
                 </p>
-                <p className="text-gray-600 mb-6">par session</p>
+                <p className="text-4xl font-bold text-brightColor mb-6">
+                  {t("dishes.rate.price")}
+                </p>
+                <p className="text-gray-600 mb-6">
+                  {t("dishes.rate.perSession")}
+                </p>
               </div>
             </div>
           </div>
 
           <div className="mt-20 text-center">
-            <a
-              href="contact"
+            <Link
+              to="/contact"
               className="inline-block px-8 py-4 bg-white text-brightColor border-2 border-brightColor rounded-full text-lg font-semibold hover:bg-brightColor hover:text-white transition duration-300"
             >
-              contact nous pur plus d'infos
-            </a>
+              {t("dishes.contact")}
+            </Link>
           </div>
         </div>
       </div>
