@@ -7,7 +7,8 @@ import { useTranslation } from "react-i18next"; // Import translation hook
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const { i18n } = useTranslation(); // Destructure i18n for changing language
+  const { t, i18n } = useTranslation(); // Destructure i18n for changing language
+  
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleDropdown = (index) => {
@@ -18,19 +19,34 @@ const Navbar = () => {
     i18n.changeLanguage(lng); // Change language function
   };
 
-  const navItems = [
-    { to: "/home", text: "Accueil" },
-    { to: "/dishes", text: "Cours de cuisine" },
-    { to: "/about", text: "À propos de nous" },
+  // const navItems = [
+  //   { to: "/home", text: "Accueil" },
+  //   { to: "/dishes", text: "Cours de cuisine" },
+  //   { to: "/about", text: "À propos de nous" },
+  //   {
+  //     text: "Menu",
+  //     dropdown: [
+  //       { to: "/menu", text: "Notre Menu" },
+  //       { to: "/review", text: "Menu Général" },
+  //       { to: "/gallery", text: "Galerie" },
+  //     ],
+  //   },
+  //   { to: "/contact", text: "Contactez-nous" },
+  // ];
+
+     const navItems = [
+    { to: "/home", text: t("Accueil") },
+    { to: "/dishes", text: t("Cours de cuisine") },
+    { to: "/about", text: t("À propos de nous") },
     {
-      text: "Menu",
+      text: t("Menu"),
       dropdown: [
-        { to: "/menu", text: "Notre Menu" },
-        { to: "/review", text: "Menu Général" },
-        { to: "/gallery", text: "Galerie" },
+        { to: "/menu", text: t("Notre Menu") },
+        { to: "/review", text: t("Menu Général") },
+        { to: "/gallery", text: t("Galerie") },
       ],
     },
-    { to: "/contact", text: "Contactez-nous" },
+    { to: "/contact", text: t("Contactez-nous") },
   ];
 
   const renderNavLinks = (isMobile = false) => (
