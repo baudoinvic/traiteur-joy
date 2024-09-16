@@ -10,8 +10,16 @@ import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import { useTranslation } from "react-i18next";
 
 const App = () => {
+
+   const { t, i18n } = useTranslation();
+
+     const changeLanguage = (lng) => {
+       i18n.changeLanguage(lng);
+     };
+
   return (
     <Router>
       <ScrollToTop />
