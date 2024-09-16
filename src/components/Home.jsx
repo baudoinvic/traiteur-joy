@@ -69,8 +69,6 @@ const Home = () => {
       </div>
       <div className="pt-20">
         <div class="flex flex-col lg:flex-row items-center justify-center">
-       
-
           <div className="flex flex-col justify-left ml-4 sm:mr-10 lg:mr-0 lg:ml-12">
             <span className="block text-left text-3xl font-bold text-gray-800 mb-4">
               {t("creationExperiences")}
@@ -95,100 +93,196 @@ const Home = () => {
         </div>
       </div>
       ----
-      <div className="pt-15">
-        <div class="flex flex-col-reverse lg:flex-row items-center justify-center">
-          <img src={food} class="w-full lg:w-2/5 mt-8 lg:mt-0 rounded-lg"></img>
+      {/* <div className="">
+        <div className="pt-15">
+          <div class="flex flex-col-reverse lg:flex-row items-center justify-center">
+            <img
+              src={food}
+              class="w-full lg:w-2/5 mt-8 lg:mt-0 rounded-lg"
+            ></img>
 
-          <div class="flex flex-col justify-left ml-4 sm:ml-8 lg:ml-12 mt-8 lg:mt-0">
-            <span class="block text-left text-3xl font-bold text-gray-800 mb-4">
-              Création de Moments
-              <br class="hidden lg:inline" />
-              Culinaires Délicieux
-            </span>
-            <span class="block text-left text-base text-gray-500 mb-4">
-              Nous sommes experts dans la création d'expériences gastronomiques
-              inoubliables
-              <br class="hidden lg:inline" />
-              De nos menus soigneusement conçus à notre présentation créative
-              <br class="hidden lg:inline" />
-              nous nous engageons à rendre chaque repas mémorable. Que ce soit
-              nos plats savoureux
-              <br class="hidden lg:inline" />
-              notre objectif est de ravir vos papilles
-            </span>
+            <div class="flex flex-col justify-left ml-4 sm:ml-8 lg:ml-12 mt-8 lg:mt-0">
+              <span class="block text-left text-3xl font-bold text-gray-800 mb-4">
+                Création de Moments
+                <br class="hidden lg:inline" />
+                Culinaires Délicieux
+              </span>
+              <span class="block text-left text-base text-gray-500 mb-4">
+                Nous sommes experts dans la création d'expériences
+                gastronomiques inoubliables
+                <br class="hidden lg:inline" />
+                De nos menus soigneusement conçus à notre présentation créative
+                <br class="hidden lg:inline" />
+                nous nous engageons à rendre chaque repas mémorable. Que ce soit
+                nos plats savoureux
+                <br class="hidden lg:inline" />
+                notre objectif est de ravir vos papilles
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="py-16 mt-20">
-        <div className="max-w-6xl mx-auto px-5 lg:px-0">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            Notre Expertise Culinaire
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="text-3xl mb-4 text-brightColor">
-                <i className="fas fa-utensils"></i>
+        <div className="py-16 mt-20">
+          <div className="max-w-6xl mx-auto px-5 lg:px-0">
+            <h2 className="text-4xl font-bold text-center mb-12">
+              Notre Expertise Culinaire
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="text-3xl mb-4 text-brightColor">
+                  <i className="fas fa-utensils"></i>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Cuisine Raffinée</h3>
+                <p className="text-gray-600">
+                  Découvrez nos plats élaborés avec passion, mêlant tradition et
+                  innovation culinaire.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Cuisine Raffinée</h3>
-              <p className="text-gray-600">
-                Découvrez nos plats élaborés avec passion, mêlant tradition et
-                innovation culinaire.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="text-3xl mb-4 text-brightColor">
-                <i className="fas fa-wine-glass-alt"></i>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="text-3xl mb-4 text-brightColor">
+                  <i className="fas fa-wine-glass-alt"></i>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">
+                  Sélection de Vins
+                </h3>
+                <p className="text-gray-600">
+                  Notre cave propose une gamme exquise de vins soigneusement
+                  choisis pour accompagner vos mets.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Sélection de Vins</h3>
-              <p className="text-gray-600">
-                Notre cave propose une gamme exquise de vins soigneusement
-                choisis pour accompagner vos mets.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="text-3xl mb-4 text-brightColor">
-                <i className="fas fa-concierge-bell"></i>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="text-3xl mb-4 text-brightColor">
+                  <i className="fas fa-concierge-bell"></i>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">
+                  Service Personnalisé
+                </h3>
+                <p className="text-gray-600">
+                  Notre équipe attentionnée s'assure que chaque visite soit une
+                  expérience mémorable.
+                </p>
               </div>
-              <h3 className="text-xl font-semibold mb-2">
-                Service Personnalisé
-              </h3>
-              <p className="text-gray-600">
-                Notre équipe attentionnée s'assure que chaque visite soit une
-                expérience mémorable.
-              </p>
             </div>
-          </div>
-          <div className="text-center mt-12">
-            <Link to="/about">
-              <button className="bg-brightColor text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition duration-300">
-                En Savoir Plus
-              </button>
-            </Link>
+            <div className="text-center mt-12">
+              <Link to="/about">
+                <button className="bg-brightColor text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition duration-300">
+                  En Savoir Plus
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="w-full md:w-4/5 mx-auto px-4 md:px-0 flex flex-col md:flex-row mb-20 pt-10">
-        <span className="mb-6 md:mb-0 md:w-3/5 text-center md:text-left">
-          <h2 className="text-xl md:text-2xl font-extrabold text-gray-800 mb-4 leading-tight">
-            Collaborons pour donner vie à vos idées
-          </h2>
-          <p className="text-lg  text-gray-700">
-            Bonjour ! C'est le meilleur moyen de nous contacter pour collaborer
-            sur votre nouveau projet. Si vous avez des questions, n'hésitez pas
-            à nous joindre via notre adresse e-mail officielle ou notre numéro
-            de téléphone. Nous avons hâte d'avoir de vos nouvelles et d'explorer
-            ensemble de nouvelles opportunités passionnantes.
-          </p>
-        </span>
-        <Link
-          to="/contact"
-          className="flex items-center justify-center md:ml-auto w-full md:w-2/5"
-        >
-          <button className="bg-brightColor text-white font-bold py-4 px-8 rounded-full shadow-md transform hover:scale-110 transition-transform duration-300 w-full md:w-auto">
-            Contactez-nous
-            <i className="fas fa-arrow-right ml-3"></i>
-          </button>
-        </Link>
+        <div className="w-full md:w-4/5 mx-auto px-4 md:px-0 flex flex-col md:flex-row mb-20 pt-10">
+          <span className="mb-6 md:mb-0 md:w-3/5 text-center md:text-left">
+            <h2 className="text-xl md:text-2xl font-extrabold text-gray-800 mb-4 leading-tight">
+              Collaborons pour donner vie à vos idées
+            </h2>
+            <p className="text-lg  text-gray-700">
+              Bonjour ! C'est le meilleur moyen de nous contacter pour
+              collaborer sur votre nouveau projet. Si vous avez des questions,
+              n'hésitez pas à nous joindre via notre adresse e-mail officielle
+              ou notre numéro de téléphone. Nous avons hâte d'avoir de vos
+              nouvelles et d'explorer ensemble de nouvelles opportunités
+              passionnantes.
+            </p>
+          </span>
+          <Link
+            to="/contact"
+            className="flex items-center justify-center md:ml-auto w-full md:w-2/5"
+          >
+            <button className="bg-brightColor text-white font-bold py-4 px-8 rounded-full shadow-md transform hover:scale-110 transition-transform duration-300 w-full md:w-auto">
+              Contactez-nous
+              <i className="fas fa-arrow-right ml-3"></i>
+            </button>
+          </Link>
+        </div>
+      </div> */}
+      <div>
+        <div className="pt-15">
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
+            <img
+              src={food}
+              className="w-full lg:w-2/5 mt-8 lg:mt-0 rounded-lg"
+              alt="Food"
+            />
+
+            <div className="flex flex-col justify-left ml-4 sm:ml-8 lg:ml-12 mt-8 lg:mt-0">
+              <span className="block text-left text-3xl font-bold text-gray-800 mb-4">
+                {t("creationMoments")}
+                <br className="hidden lg:inline" />
+                {t("culinairesDelicieux")}
+              </span>
+              <span className="block text-left text-base text-gray-500 mb-4">
+                {t("expertsCreation")}
+                <br className="hidden lg:inline" />
+                {t("menusConcus")}
+                <br className="hidden lg:inline" />
+                {t("engagementRepas")}
+                <br className="hidden lg:inline" />
+                {t("objectifPapilles")}
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="py-16 mt-20">
+          <div className="max-w-6xl mx-auto px-5 lg:px-0">
+            <h2 className="text-4xl font-bold text-center mb-12">
+              {t("notreExpertiseCulinaire")}
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="text-3xl mb-4 text-brightColor">
+                  <i className="fas fa-utensils"></i>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">
+                  {t("cuisineRaffinee")}
+                </h3>
+                <p className="text-gray-600">{t("platsElabores")}</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="text-3xl mb-4 text-brightColor">
+                  <i className="fas fa-wine-glass-alt"></i>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">
+                  {t("selectionVins")}
+                </h3>
+                <p className="text-gray-600">{t("cavePropose")}</p>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="text-3xl mb-4 text-brightColor">
+                  <i className="fas fa-concierge-bell"></i>
+                </div>
+                <h3 className="text-xl font-semibold mb-2">
+                  {t("servicePersonnalise")}
+                </h3>
+                <p className="text-gray-600">{t("equipeAttentionnee")}</p>
+              </div>
+            </div>
+            <div className="text-center mt-12">
+              <Link to="/about">
+                <button className="bg-brightColor text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition duration-300">
+                  {t("enSavoirPlus")}
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="w-full md:w-4/5 mx-auto px-4 md:px-0 flex flex-col md:flex-row mb-20 pt-10">
+          <span className="mb-6 md:mb-0 md:w-3/5 text-center md:text-left">
+            <h2 className="text-xl md:text-2xl font-extrabold text-gray-800 mb-4 leading-tight">
+              {t("collaboronsIdees")}
+            </h2>
+            <p className="text-lg text-gray-700">{t("bonjourContact")}</p>
+          </span>
+          <Link
+            to="/contact"
+            className="flex items-center justify-center md:ml-auto w-full md:w-2/5"
+          >
+            <button className="bg-brightColor text-white font-bold py-4 px-8 rounded-full shadow-md transform hover:scale-110 transition-transform duration-300 w-full md:w-auto">
+              {t("contactezNous")}
+              <i className="fas fa-arrow-right ml-3"></i>
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
