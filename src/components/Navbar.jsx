@@ -366,7 +366,7 @@ const Navbar = () => {
       <div className="flex items-center space-x-2 mt-4 md:mt-0">
         <button
           onClick={() => changeLanguage("fr")}
-          className="flex items-center space-x-1 bg-transparent border border-gray-300 px-2 py-1 rounded focus:outline-none"
+          className="flex items-center space-x-1 bg-transparent border  px-2 py-1 rounded focus:outline-none"
         >
           <img
             src="https://www.countryflags.com/wp-content/uploads/france-flag-png-xl.png"
@@ -377,12 +377,12 @@ const Navbar = () => {
         </button>
         <button
           onClick={() => changeLanguage("en")}
-          className="flex items-center space-x-1 bg-transparent border border-gray-300 px-2 py-1 rounded focus:outline-none"
+          className="flex items-center space-x-1 bg-transparent border border-gray-300 px-2 py-1 rounded focus:outline-none w-16"
         >
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCIEEb2cSAlgP4ZLCUL8r6Jgw0cvjAhXwiCtc1eXYGTA&s"
             alt="English Flag"
-            className="w-4"
+            className="w-8"
           />
           <span className="text-white">Eng</span>
         </button>
