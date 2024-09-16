@@ -114,6 +114,8 @@
     },
     "contact": "Contactez-nous pour plus d'informations"
   },
+
+   
   
   "contact": {
     "hero": {
@@ -153,5 +155,7 @@
       "messagePlaceholder": "Parlez-nous de vos rêves culinaires...",
       "submit": "Envoyer le Message"
     }
-}
+
+   
+  }
 }

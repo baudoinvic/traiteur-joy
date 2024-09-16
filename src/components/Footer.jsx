@@ -11,9 +11,10 @@ import {
   FaPhoneAlt,
 } from "react-icons/fa";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-
+ const {t, i18n} = useTranslation();
  
   const [email, setEmail] = useState("");
 

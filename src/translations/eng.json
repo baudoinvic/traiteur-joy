@@ -139,6 +139,8 @@
       "number": "+32 498 77 82 91",
       "action": "Call Now"
     },
+
+  
     "form": {
       "title": "Send Us a Message",
       "firstname": "First Name",
@@ -153,5 +155,7 @@
       "messagePlaceholder": "Tell us about your culinary dreams...",
       "submit": "Send Message"
     }
-}
+
+   
+  }
 }
