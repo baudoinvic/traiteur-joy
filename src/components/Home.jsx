@@ -11,7 +11,6 @@ const Home = () => {
     const { t, i18n } = useTranslation(); 
   return (
     <div className="landing-page">
-   
       <div className="landing-page">
         <div className="min-h-[95vh] flex flex-col justify-center items-start lg:items-start lg:px-32 px-5 bg-[url('./assets/img/pic21.jpg')] bg-cover bg-center bg-no-repeat relative">
           <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -47,24 +46,16 @@ const Home = () => {
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
+        
           <div className="lg:w-1/2 space-y-6 text-left">
             <p className="text-gray-700 leading-relaxed">
-              J'ai conçu ce concept gastronomique pour vous il y a dix ans !
-              C'est toujours un réel plaisir de vous accueillir chez nous, dans
-              notre loft pour un moment de convivialité en cuisine puis à table
-              autour d'un repas que nous préparons ensemble.
+              {t("conceptGastronomique")}
             </p>
             <p className="text-gray-700 leading-relaxed">
-              ✻ Je n'ai pas été formé par un grand chef. L'idée ici est de
-              partager une passion. Le plaisir d'être en cuisine m'a été
-              transmis par mon grand-père, mon Nonno. Mes influences ? L'Italie,
-              avant tout, ses arômes, ses vins et son huile d'olive pour une
-              cuisine simple et authentique.
+              {t("partagerPassion")}
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Plus largement, il s'agit d'une cuisine fraîche, colorée et saine
-              aux accents méditerranéens, mais aussi de répondre à vos envies et
-              aux défis que vous souhaitez me lancer.
+              {t("cuisineFraiche")}
             </p>
           </div>
         </div>
