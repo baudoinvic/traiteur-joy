@@ -61,10 +61,6 @@ const Home = () => {
         </div>
       </div>
       <div className="text-center mt-20">
-        {/* <span className="text-lg md:text-2xl lg:text-3xl font-bold md:text-left">
-          Explorez des plats délicieux
-          <br className="hidden md:inline" /> et des saveurs uniques
-        </span> */}
         <span className="text-lg md:text-2xl lg:text-3xl font-bold md:text-left">
           {t("explorezPlats")}
           <br className="hidden md:inline" />
@@ -73,21 +69,22 @@ const Home = () => {
       </div>
       <div className="pt-20">
         <div class="flex flex-col lg:flex-row items-center justify-center">
-          <div class="flex flex-col justify-left ml-4 sm:mr-10 lg:mr-0 lg:ml-12">
-            <span class="block text-left text-3xl font-bold text-gray-800 mb-4">
-              Création d'Expériences
-              <br /> Culinaires Exceptionnelles
+       
+
+          <div className="flex flex-col justify-left ml-4 sm:mr-10 lg:mr-0 lg:ml-12">
+            <span className="block text-left text-3xl font-bold text-gray-800 mb-4">
+              {t("creationExperiences")}
+              <br />
+              {t("culinairesExceptionnelles")}
             </span>
-            <span class="text-gray-500 block text-left text-base mb-4 lg:mt-10">
-              Nos créations culinaires sont méticuleusement préparées
-              <br class="hidden lg:inline" />
-              pour satisfaire une variété de goûts et de préférences.
-              <br class="hidden lg:inline" />
-              Notre équipe de cuisine collabore étroitement pour créer des plats
-              innovants
-              <br class="hidden lg:inline" />
-              et un dévouement à l'excellence culinaire qui reflètent notre
-              passion pour la nourriture
+            <span className="text-gray-500 block text-left text-base mb-4 lg:mt-10">
+              {t("creationsCulinaires")}
+              <br className="hidden lg:inline" />
+              {t("satisfaireVariete")}
+              <br className="hidden lg:inline" />
+              {t("equipeCuisine")}
+              <br className="hidden lg:inline" />
+              {t("devouementExcellence")}
             </span>
           </div>
 
