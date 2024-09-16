@@ -5,11 +5,13 @@ import food from "../assets/img/food.jpg";
 import food1 from "../assets/img/food1.jpg";
 import { Link } from "react-router-dom";
 import funy from "../assets/img/funy.jpg";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+    const { t, i18n } = useTranslation(); 
   return (
     <div className="landing-page">
-      <div className="min-h-[95vh] flex flex-col justify-center items-start lg:items-start lg:px-32 px-5 bg-[url('./assets/img/pic21.jpg')] bg-cover bg-center bg-no-repeat relative">
+      {/* <div className="min-h-[95vh] flex flex-col justify-center items-start lg:items-start lg:px-32 px-5 bg-[url('./assets/img/pic21.jpg')] bg-cover bg-center bg-no-repeat relative">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="w-full lg:w-2/3 space-y-8 z-10 text-white">
           <h1 className="font-bold text-5xl lg:text-7xl leading-tight">
@@ -31,6 +33,32 @@ const Home = () => {
             </Link>
           </div>
         </div>
+      </div> */}
+      <div className="landing-page">
+        <div className="min-h-[95vh] flex flex-col justify-center items-start lg:items-start lg:px-32 px-5 bg-[url('./assets/img/pic21.jpg')] bg-cover bg-center bg-no-repeat relative">
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="w-full lg:w-2/3 space-y-8 z-10 text-white">
+            <h1 className="font-bold text-5xl lg:text-7xl leading-tight">
+              {t("Traiteur")} <span className="text-brightColor">Joy</span>
+            </h1>
+            <p className="text-lg lg:text-xl font-light max-w-2xl">
+              {t(
+                "Nous sommes là pour vous servir des plats délicieux, accompagnés de boissons raffinées. Nous servons toujours des plats savoureux à nos clients."
+              )}
+            </p>
+            <div className="mt-10">
+              <Link to="/menu">
+                <button className="group relative overflow-hidden px-8 py-4 bg-brightColor rounded-full text-lg font-semibold transition duration-300">
+                  <span className="absolute inset-0 w-full h-full bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+                  <span className="relative group-hover:text-brightColor transition duration-300">
+                    {t("Voir notre menu")}
+                  </span>
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+        {/* Continue updating the rest of the text similarly */}
       </div>
       <div className="mt-20 px-5 lg:px-16 mx-auto w-full">
         <div className="flex flex-col lg:flex-row items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-12">
@@ -98,10 +126,7 @@ const Home = () => {
       ----
       <div className="pt-15">
         <div class="flex flex-col-reverse lg:flex-row items-center justify-center">
-          <img
-            src={food}
-            class="w-full lg:w-2/5 mt-8 lg:mt-0 rounded-lg"
-          ></img>
+          <img src={food} class="w-full lg:w-2/5 mt-8 lg:mt-0 rounded-lg"></img>
 
           <div class="flex flex-col justify-left ml-4 sm:ml-8 lg:ml-12 mt-8 lg:mt-0">
             <span class="block text-left text-3xl font-bold text-gray-800 mb-4">
@@ -171,7 +196,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-    
       <div className="w-full md:w-4/5 mx-auto px-4 md:px-0 flex flex-col md:flex-row mb-20 pt-10">
         <span className="mb-6 md:mb-0 md:w-3/5 text-center md:text-left">
           <h2 className="text-xl md:text-2xl font-extrabold text-gray-800 mb-4 leading-tight">

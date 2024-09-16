@@ -19,20 +19,6 @@ const Navbar = () => {
     i18n.changeLanguage(lng); // Change language function
   };
 
-  // const navItems = [
-  //   { to: "/home", text: "Accueil" },
-  //   { to: "/dishes", text: "Cours de cuisine" },
-  //   { to: "/about", text: "À propos de nous" },
-  //   {
-  //     text: "Menu",
-  //     dropdown: [
-  //       { to: "/menu", text: "Notre Menu" },
-  //       { to: "/review", text: "Menu Général" },
-  //       { to: "/gallery", text: "Galerie" },
-  //     ],
-  //   },
-  //   { to: "/contact", text: "Contactez-nous" },
-  // ];
 
      const navItems = [
     { to: "/home", text: t("Accueil") },
