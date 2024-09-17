@@ -49,6 +49,8 @@ const Footer = () => {
 
 
   return (
+   
+
     <div className="bg-gray-900 text-white rounded-t-3xl mt-8 md:mt-0 shadow-2xl">
       <div className="container mx-auto p-8 md:p-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -60,20 +62,13 @@ const Footer = () => {
                 className="w-16 h-auto rounded-full shadow-lg"
               />
               <h1 className="font-bold text-2xl text-brightColor">
-                Traiteur Joy
+                {t("title")}
               </h1>
             </div>
-            <p className="text-gray-300">
-              Nous sommes là pour vous servir des plats délicieux,
-              <br />
-              accompagnés de boissons raffinées.
-            </p>
+            <p className="text-gray-300">{t("description")}</p>
 
-           
             <div>
-              <p className="text-lg font-semibold mb-3">
-                Suivez Notre Actualité
-              </p>
+              <p className="text-lg font-semibold mb-3">{t("followUs")}</p>
               <form
                 onSubmit={handleSubmit}
                 action="/abonnement"
@@ -86,7 +81,7 @@ const Footer = () => {
                   id="email"
                   value={email}
                   onChange={handleChange}
-                  placeholder="Entrez votre email"
+                  placeholder={t("email")}
                   required
                   className="px-4 py-3 bg-gray-800 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-brightColor"
                 />
@@ -94,7 +89,7 @@ const Footer = () => {
                   type="submit"
                   className="px-6 py-3 bg-brightColor text-white rounded-lg font-semibold hover:bg-brightColor-dark transition duration-300 shadow-md"
                 >
-                  S'abonner
+                  {t("subscribe")}
                 </button>
               </form>
             </div>
@@ -102,80 +97,80 @@ const Footer = () => {
 
           <div>
             <h2 className="text-2xl font-bold text-brightColor mb-6">
-              Navigation
+              {t("navigation")}
             </h2>
             <nav className="space-y-3">
               <Link
                 to="/home"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                Acceuil
+                {t("home")}
               </Link>
               <Link
                 to="/about"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                À propos de nous
+                {t("aboutUs")}
               </Link>
               <Link
                 to="/menu"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                Notre Menu
+                {t("menu")}
               </Link>
               <Link
                 to="/contact"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                Contactez-nous
+                {t("contactUs")}
               </Link>
             </nav>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-brightColor mb-6">
-              Liens importants
+              {t("importantLinks")}
             </h2>
             <nav className="space-y-3">
               <Link
                 to="/review"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                Menu General
+                {t("generalMenu")}
               </Link>
               <Link
                 to="/dishes"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                Cours de Cuisine
+                {t("cookingClasses")}
               </Link>
               <Link
                 to="/gallery"
                 className="block text-gray-300 hover:text-brightColor transition duration-300"
               >
-                Notre Galerie
+                {t("gallery")}
               </Link>
             </nav>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-brightColor mb-6">
-              Contact
+              {t("contacte")}
             </h2>
             <nav className="space-y-4">
               <a
-                href="mailto:traiteurjoy@gmail.com"
+                href={`mailto:${t("email")}`}
                 className="block text-gray-300 hover:text-brightColor transition duration-300 flex items-center"
               >
                 <MdOutlineMailOutline className="text-2xl mr-3" />
-                traiteurjoy@gmail.com
+                {t("email")}
               </a>
               <a
-                href="tel:+32493039440"
+                href={`tel:${t("phone")}`}
                 className="block text-gray-300 hover:text-brightColor transition duration-300 flex items-center"
               >
                 <FaPhoneAlt className="text-xl mr-3" />
-                +32 493 03 94 40
+                {t("phone")}
               </a>
               <a
                 href="https://goo.gl/maps/yourAddress"
@@ -184,11 +179,7 @@ const Footer = () => {
                 className="block text-gray-300 hover:text-brightColor transition duration-300 flex items-start"
               >
                 <IoLocationOutline className="text-2xl mr-3 mt-1" />
-                <span>
-                  Rue Joseph Stevens 28
-                  <br /> 1000 Bruxelles
-                  <br /> TVA 0744.562.496
-                </span>
+                <span>{t("address")}</span>
               </a>
             </nav>
           </div>
@@ -196,9 +187,7 @@ const Footer = () => {
 
         <div className="mt-16 pt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 mb-4 md:mb-0">
-              © 2024 Traiteur Joy. Tous droits réservés.
-            </p>
+            <p className="text-gray-400 mb-4 md:mb-0">{t("copyright")}</p>
           </div>
         </div>
       </div>

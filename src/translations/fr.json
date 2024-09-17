@@ -79,7 +79,24 @@
   "Poire_sirop": "Poire cuite en sirop crème anglaise (60g) … +-1.20",
   "Pomme_pate_feuilletee": "Pomme roulée en pâte feuilletée ou sablé (80g) … +-1.20",
   "Pommes_crepes_normandes": "Pommes, Crêpes normandes (100g) … +-1.70",
-
+   "title": "Traiteur Joy",
+  "description": "Nous sommes là pour vous servir des plats délicieux, accompagnés de boissons raffinées.",
+  "followUs": "Suivez Notre Actualité",
+  "subscribe": "S'abonner",
+  "navigation": "Navigation",
+  "home": "Accueil",
+  "aboutUs": "À propos de nous",
+  "menu": "Notre Menu",
+  "contactUs": "Contactez-nous",
+  "importantLinks": "Liens importants",
+  "generalMenu": "Menu Général",
+  "cookingClasses": "Cours de Cuisine",
+  "gallery": "Notre Galerie",
+  "contacte": "Contact",
+  "email": "traiteurjoy@gmail.com",
+  "phone": "+32 493 03 94 40",
+  "address": "Rue Joseph Stevens 28\n1000 Bruxelles\nTVA 0744.562.496",
+  "copyright": "© 2024 Traiteur Joy. Tous droits réservés.",
 
   "dishes": {
     "hero": {
