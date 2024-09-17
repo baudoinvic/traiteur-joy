@@ -44,6 +44,48 @@
   "bienvenue": "Welcome to Traiteur Joy, where we celebrate the art of fine gastronomy and exceptional culinary experiences. Our restaurant is a labor of love, born from a passion to create unforgettable moments through exquisite flavors and impeccable service.",
   "citation": "\"Each meal is a sensory journey that tantalizes the palate and delights the senses.\"",
   "croyance": "At Traiteur Joy, we believe that dining is not just about satisfying hunger. It's an immersion into a world of flavors. Our talented chefs meticulously craft each dish, using only the finest and freshest ingredients, ensuring that every bite is a masterpiece.",
+   "TRAITEUR_JOY_MENU": "TRAITEUR JOY MENU",
+  "Recettes": "Recipes",
+  "Portion par élève": "Portion per student",
+  "EUROS": "EUROS",
+  "Betterave_puree": "Red beet puree for Bolognese (10g) … +-0.10",
+  "Ketchup_maison": "Homemade ketchup (15g) … +-0.10",
+  "Samoussa_croquant": "Crispy vegetarian samosa (40g) … +-0.40",
+  "Smoothie_pomme_canelle": "Apple-cinnamon-oat-walnut smoothie (200ml) … 1.20",
+  "Smoothie_pomme_poire": "Apple-pear-chestnut smoothie (200ml) … 1.20",
+  "Carottes_gateau": "Carrot cake-creamed (30g) … +-0.50",
+  "Carotte_carbonnade": "Carrot with lime white lemongrass (60g) for carbonnade … +-0.40",
+  "Celeri_potage": "Celeriac soup (200ml) … +-0.80",
+  "Champignon_Stroganoff": "Mushroom Stroganoff (60g) … +-1.35",
+  "Chicon_raisins": "Chicory with raisins and organic honey (60g) (chicken) … +-1.50",
+  "Chou_blanc_grecque": "Greek-style white cabbage (40g) … +-0.40",
+  "Chou_Bruxelles_mousse": "Brussels sprouts mousse (40g) … +-0.90",
+  "Chou_frise_saucisses": "Smoked kale for sausages (60g) … +-0.70",
+  "Chou_rave_Remoulade": "Kohlrabi Remoulade (60g) … +-0.95",
+  "Chou_rouge_miel": "Red cabbage with organic honey (60g) … +-1.20",
+  "Chou_vert_potage": "Green cabbage soup with two hams (200ml) … +-0.60",
+  "Cresson_veloute": "Watercress velouté (200ml) … +-0.80",
+  "Germes_Soja_rouleau": "Soybean sprouts in fresh spring roll (50g) … +-1.10",
+  "Maches_salades": "Lamb's lettuce salad with sweet corn (50g) … +-0.80",
+  "Navet_Provincale": "Turnip and Provencal for couscous (60g) … +-1.40",
+  "Oignon_soupe": "Onion (onion soup) (200ml) … +-1.90",
+  "Panais_sauce_coco": "Parsnip coconut sauce (for turkey carbonnade) … +-1.50",
+  "Pleurotes_creme": "Oyster mushrooms in cream (for steak; 50g per person) … +-1.80",
+  "Poireau_sauce_truffee": "Leek with truffle sauce (60g) for fish … +-1.30",
+  "Poireau_carbonara": "Leek carbonara (60g) … +-1.10",
+  "Potimaron_veloute": "Pumpkin velouté (250ml) … +-1.50",
+  "Topinambour_mousse": "Jerusalem artichoke mousse (60g) … +-0.50",
+  "Poire_sirop": "Pear cooked in syrup with custard (60g) … +-1.20",
+  "Pomme_pate_feuilletee": "Apple rolled in puff pastry or shortbread (80g) … +-1.20",
+  "Pommes_crepes_normandes": "Apples, Normandy pancakes (100g) … +-1.70",
+
+
+
+
+
+
+
+
   "dishes": {
     "hero": {
       "title1": "PLATING COURSES",
@@ -87,7 +129,6 @@
       "item3": "Preparation of seafood (e.g., grey shrimp)"
     },
 
-   
 
     "signature": {
       "title": "Signature Dishes",
@@ -159,7 +200,8 @@
       "messagePlaceholder": "Tell us about your culinary dreams...",
       "submit": "Send Message"
     }
-
+    
+    
    
   }
 }
