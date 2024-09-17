@@ -68,6 +68,8 @@ const Footer = () => {
               <br />
               accompagnés de boissons raffinées.
             </p>
+
+           
             <div>
               <p className="text-lg font-semibold mb-3">
                 Suivez Notre Actualité
