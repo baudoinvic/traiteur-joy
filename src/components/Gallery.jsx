@@ -25,11 +25,7 @@ const Gallery = () => {
         Traiteur Joy Galerie
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {/* <img
-          src={pic1}
-          alt="pic1"
-          className="w-full h-64 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105"
-        /> */}
+       
         <img
           src={pic2}
           alt="pic2"
