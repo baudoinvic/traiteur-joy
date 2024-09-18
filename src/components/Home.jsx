@@ -1,8 +1,6 @@
 import React from "react";
 import Button from "../layouts/Button";
 import img from "../assets/img/about.png";
-// import food from "../assets/img/food.jpg";
-// import food1 from "../assets/img/food1.jpg";
 import pic2 from "../assets/img/pic2.jpg";
 import pic5 from "../assets/img/pic5.jpg";
 import { Link } from "react-router-dom";
