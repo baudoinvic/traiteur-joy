@@ -390,7 +390,7 @@ const Review = () => {
             </ul>
 
             <p className="text-lg font-semibold mb-4 text-gray-800">
-              {t("dishes")}
+              {t("dishe")}
             </p>
             <ul className="space-y-3 text-gray-700 mb-6">
               <li>
