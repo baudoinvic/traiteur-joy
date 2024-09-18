@@ -7,63 +7,333 @@ const Review = () => {
    const { t, i18n } = useTranslation();
 
   return (
-    <div className=" min-h-screen flex flex-col items-center justify-center md:px-32 px-5 pt-20">
-      <h3 className=" text-4xl font-semibold text-center lg:pt-16 pt-24 pb-10 text-brightColor">
-        Services Nourriture
+    // <div className=" min-h-screen flex flex-col items-center justify-center md:px-32 px-5 pt-20">
+    //   <h3 className=" text-4xl font-semibold text-center lg:pt-16 pt-24 pb-10 text-brightColor">
+    //     Services Nourriture
+    //   </h3>
+    //   <p className="font-semibold">
+    //     plats proposé par la Cheffe sont en et sont de +-21.8 euros par personne
+    //   </p>
+
+    //   <div className="mt-10 max-w-4xl mx-auto bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
+    //     <div className="flex">
+    //       <div className="left-side flex-grow pr-10">
+    //         <p className="text-lg font-semibold mb-4">Amuses Bouches</p>
+    //         <ul className="space-y-4 text-gray-700">
+    //           <li>
+    //             <span className="font-medium">•</span> Poisson fumé, haricots
+    //             vert vinaigrette à la truffe
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Crêpe indien, guacamole
+    //             d'avocat beurre, salami de poulet
+    //           </li>
+    //           <li>
+    //             <p className="font-medium mb-2">
+    //               Mini tatin de racines de légumes oubliés :
+    //             </p>
+    //             <ul className="pl-6 space-y-1">
+    //               <li>
+    //                 <span className="font-medium">•</span> Topinambour
+    //                 accompagné de haricots secs sans peau
+    //               </li>
+    //               <li>
+    //                 <span className="font-medium">•</span> Manioc accompagné de
+    //                 haricots sans peau
+    //               </li>
+    //               <li>
+    //                 <span className="font-medium">•</span> Igname accompagné de
+    //                 houmous de petits pois secs
+    //               </li>
+    //             </ul>
+    //           </li>
+    //           <li>
+    //             <p>
+    //               <span className="font-medium">•</span> Champignon crème de
+    //               cacahuète et anchois de Kivu, pâte de manioc
+    //             </p>
+    //             <ul className="pl-6 space-y-1 mt-1">
+    //               <li>
+    //                 <span className="font-medium">•</span> Beurre persillée et
+    //                 mini sandwich
+    //               </li>
+    //               <li>
+    //                 <span className="font-medium">•</span> Mini boulettes à la
+    //                 rwandaise
+    //               </li>
+    //               <li>
+    //                 <span className="font-medium">•</span> Samboussa
+    //                 rwandais-indiens
+    //               </li>
+    //             </ul>
+    //           </li>
+    //         </ul>
+    //       </div>
+    //       <div className="right-side w-32 text-right">
+    //         <p className="text-lg font-semibold mb-4 invisible">Prix</p>
+    //         <ul className="space-y-4 text-gray-800">
+    //           <li>1,5 €</li>
+    //           <li>1,5 €</li>
+    //           <li>
+    //             <p className="invisible mb-2">Prix</p>
+    //             <ul className="space-y-1">
+    //               <li>0,5 €</li>
+    //               <li>0,5 €</li>
+    //               <li>1 €</li>
+    //             </ul>
+    //           </li>
+    //           <li>
+    //             <p>1 €</p>
+    //             <ul className="space-y-1 mt-1">
+    //               <li>1 €</li>
+    //               <li>1 €</li>
+    //               <li>1 €</li>
+    //             </ul>
+    //           </li>
+    //         </ul>
+    //       </div>
+    //     </div>
+    //   </div>
+
+    //   <div className="mt-10 max-w-4xl mx-auto bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
+    //     <div className="flex">
+    //       <div className="left-side flex-grow pr-10">
+    //         <p className="text-lg font-semibold mb-4 text-gray-800">Entrées</p>
+    //         <ul className="space-y-3 text-gray-700 mb-6">
+    //           <li>
+    //             <span className="font-medium">•</span> Mini filets de poisson
+    //             frits, sauce tartare
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Salade niçoise
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Salade de pâtes
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Aubergines –fromage à
+    //             l'italienne
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Salade Kenyane épicée
+    //           </li>
+    //         </ul>
+
+    //         <p className="text-lg font-semibold mb-4 text-gray-800">Plats</p>
+    //         <ul className="space-y-3 text-gray-700 mb-6">
+    //           <li>
+    //             <span className="font-medium">•</span> Croquette de ris de veau
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Croquette de patates
+    //             douces fumées
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Agneau entier cuit en
+    //             papillotte
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Chèvre barbecue à la
+    //             rwandaise
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Poissons grands lacs
+    //             frits en crème provinçale, oignon frits
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Pondu, feuille de manioc
+    //             – jus de viande (plat équatorienne)
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Chili sin carne à la
+    //             rwandaise (plat ancestrale rwandais) végétarien
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Carbonnades rwandaises
+    //             (traditionnelle belge-français revisité à la rwandaise)
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Bananes vertes, poulet
+    //             jaune (igisafuriya plat traditionnelle rwandais)
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Pomme de terre sautées
+    //             (végétarien)
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Riz pilaf rwandais /
+    //             indien
+    //           </li>
+    //         </ul>
+
+    //         <p className="text-lg font-semibold mb-4 text-gray-800">
+    //           Entremet & Desserts
+    //         </p>
+    //         <ul className="space-y-3 text-gray-700">
+    //           <li>
+    //             <span className="font-medium">•</span> Sucettes de bananes
+    //             plantains frits, fromage
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Gâteau au drapeau
+    //             rwandais
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Mini crêpes impérial,
+    //             avec purée de fruits exotiques de saison ou caramel
+    //           </li>
+    //           <li>
+    //             <span className="font-medium">•</span> Beignets des grands lacs
+    //           </li>
+    //         </ul>
+    //       </div>
+
+    //       <div className="right-side w-24 text-right">
+    //         <p className="text-2xl font-bold mb-6 invisible">Prix</p>
+
+    //         <p className="text-lg font-semibold mb-4 invisible">Prix</p>
+    //         <ul className="space-y-3 text-gray-800 mb-6">
+    //           <li>1,2 €</li>
+    //           <li>1 €</li>
+    //           <li>0,7 €</li>
+    //           <li>2 €</li>
+    //           <li>0,5 €</li>
+    //         </ul>
+
+    //         <p className="text-lg font-semibold mb-4 invisible">Prix</p>
+    //         <ul className="space-y-3 text-gray-800 mb-6">
+    //           <li>1,5 €</li>
+    //           <li>0,5 €</li>
+    //           <li>4 €</li>
+    //           <li>3 €</li>
+    //           <li>4 €</li>
+    //           <li>0,5 €</li>
+    //           <li>0,3 €</li>
+    //           <li>0,7 €</li>
+    //           <li>3 €</li>
+    //           <li>0,3 €</li>
+    //           <li>0,7 €</li>
+    //         </ul>
+
+    //         <p className="text-lg font-semibold mb-4 invisible">Prix</p>
+    //         <ul className="space-y-3 text-gray-800">
+    //           <li>0,6 €</li>
+    //           <li>3 €</li>
+    //           <li>0,8 €</li>
+    //           <li>0,2 €</li>
+    //         </ul>
+    //       </div>
+    //     </div>
+
+    //     <div className="mt-10">
+    //       <p className="text-lg font-semibold mb-4 text-gray-800">
+    //         Service Boissons <br />Sélection conseillée par la cheffe, revient à 16
+    //         euros par personne
+    //       </p>
+    //       <div className="flex">
+    //         <div className="left-side flex-grow pr-10">
+    //           <ul className="space-y-3 text-gray-700">
+    //             <li>
+    //               <span className="font-medium">•</span> Bierres locales (2) et
+    //               ou belges (1)
+    //             </li>
+    //             <li>
+    //               <span className="font-medium">•</span> Sangria fait maison
+    //               (Apéritif alcoolisé)
+    //             </li>
+    //             <li>
+    //               <span className="font-medium">•</span> Virgin Mojito (Apéritif
+    //               sans alcool)
+    //             </li>
+    //             <li>
+    //               <span className="font-medium">•</span> Eau (0.5 l)
+    //             </li>
+    //             <li>
+    //               <span className="font-medium">•</span> Soft
+    //             </li>
+    //             <li>
+    //               <span className="font-medium">•</span> Vin Rouge
+    //             </li>
+    //             <li>
+    //               <span className="font-medium">•</span> Vin Blanc
+    //             </li>
+    //             <li>
+    //               <span className="font-medium">•</span> Liqueur de banane
+    //               ancestrale digestive
+    //             </li>
+    //             <li>
+    //               <span className="font-medium">•</span> Café
+    //             </li>
+    //             <li>
+    //               <span className="font-medium">•</span> Thé nature ou citroné
+    //             </li>
+    //           </ul>
+    //         </div>
+    //         <div className="right-side w-24 text-right">
+    //           <ul className="space-y-3 text-gray-800">
+    //             <li>4 €</li>
+    //             <li>3 €</li>
+    //             <li>2,5 €</li>
+    //             <li>1 €</li>
+    //             <li>1 €</li>
+    //             <li>6 €</li>
+    //             <li>6 €</li>
+    //             <li>2,5 €</li>
+    //             <li>2,5 €</li>
+    //             <li>1,5 €</li>
+    //           </ul>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+
+    <div className="min-h-screen flex flex-col items-center justify-center md:px-32 px-5 pt-20">
+      <h3 className="text-4xl font-semibold text-center lg:pt-16 pt-24 pb-10 text-brightColor">
+        {t("servicesFood")}
       </h3>
-      <p className="font-semibold">
-        plats proposé par la Cheffe sont en et sont de +-21.8 euros par personne
-      </p>
+      <p className="font-semibold">{t("dishesDescription")}</p>
 
       <div className="mt-10 max-w-4xl mx-auto bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
         <div className="flex">
           <div className="left-side flex-grow pr-10">
-            <p className="text-lg font-semibold mb-4">Amuses Bouches</p>
+            <p className="text-lg font-semibold mb-4">{t("amusesBouches")}</p>
             <ul className="space-y-4 text-gray-700">
               <li>
-                <span className="font-medium">•</span> Poisson fumé, haricots
-                vert vinaigrette à la truffe
+                <span className="font-medium">•</span> {t("smokedFish")}
               </li>
               <li>
-                <span className="font-medium">•</span> Crêpe indien, guacamole
-                d'avocat beurre, salami de poulet
+                <span className="font-medium">•</span> {t("indianCrepe")}
               </li>
               <li>
-                <p className="font-medium mb-2">
-                  Mini tatin de racines de légumes oubliés :
-                </p>
+                <p className="font-medium mb-2">{t("miniTatin")} :</p>
                 <ul className="pl-6 space-y-1">
                   <li>
-                    <span className="font-medium">•</span> Topinambour
-                    accompagné de haricots secs sans peau
+                    <span className="font-medium">•</span> {t("topinambour")}
                   </li>
                   <li>
-                    <span className="font-medium">•</span> Manioc accompagné de
-                    haricots sans peau
+                    <span className="font-medium">•</span> {t("cassava")}
                   </li>
                   <li>
-                    <span className="font-medium">•</span> Igname accompagné de
-                    houmous de petits pois secs
+                    <span className="font-medium">•</span> {t("yam")}
                   </li>
                 </ul>
               </li>
               <li>
                 <p>
-                  <span className="font-medium">•</span> Champignon crème de
-                  cacahuète et anchois de Kivu, pâte de manioc
+                  <span className="font-medium">•</span> {t("mushroom")}
                 </p>
                 <ul className="pl-6 space-y-1 mt-1">
                   <li>
-                    <span className="font-medium">•</span> Beurre persillée et
-                    mini sandwich
+                    <span className="font-medium">•</span> {t("garlicButter")}
                   </li>
                   <li>
-                    <span className="font-medium">•</span> Mini boulettes à la
-                    rwandaise
+                    <span className="font-medium">•</span>{" "}
+                    {t("rwandanMeatballs")}
                   </li>
                   <li>
-                    <span className="font-medium">•</span> Samboussa
-                    rwandais-indiens
+                    <span className="font-medium">•</span>{" "}
+                    {t("rwandanIndianSamosa")}
                   </li>
                 </ul>
               </li>
@@ -98,92 +368,84 @@ const Review = () => {
       <div className="mt-10 max-w-4xl mx-auto bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
         <div className="flex">
           <div className="left-side flex-grow pr-10">
-            <p className="text-lg font-semibold mb-4 text-gray-800">Entrées</p>
+            <p className="text-lg font-semibold mb-4 text-gray-800">
+              {t("entries")}
+            </p>
             <ul className="space-y-3 text-gray-700 mb-6">
               <li>
-                <span className="font-medium">•</span> Mini filets de poisson
-                frits, sauce tartare
+                <span className="font-medium">•</span> {t("miniFishFillets")}
               </li>
               <li>
-                <span className="font-medium">•</span> Salade niçoise
+                <span className="font-medium">•</span> {t("nicoiseSalad")}
               </li>
               <li>
-                <span className="font-medium">•</span> Salade de pâtes
+                <span className="font-medium">•</span> {t("pastaSalad")}
               </li>
               <li>
-                <span className="font-medium">•</span> Aubergines –fromage à
-                l'italienne
+                <span className="font-medium">•</span> {t("eggplantCheese")}
               </li>
               <li>
-                <span className="font-medium">•</span> Salade Kenyane épicée
-              </li>
-            </ul>
-
-            <p className="text-lg font-semibold mb-4 text-gray-800">Plats</p>
-            <ul className="space-y-3 text-gray-700 mb-6">
-              <li>
-                <span className="font-medium">•</span> Croquette de ris de veau
-              </li>
-              <li>
-                <span className="font-medium">•</span> Croquette de patates
-                douces fumées
-              </li>
-              <li>
-                <span className="font-medium">•</span> Agneau entier cuit en
-                papillotte
-              </li>
-              <li>
-                <span className="font-medium">•</span> Chèvre barbecue à la
-                rwandaise
-              </li>
-              <li>
-                <span className="font-medium">•</span> Poissons grands lacs
-                frits en crème provinçale, oignon frits
-              </li>
-              <li>
-                <span className="font-medium">•</span> Pondu, feuille de manioc
-                – jus de viande (plat équatorienne)
-              </li>
-              <li>
-                <span className="font-medium">•</span> Chili sin carne à la
-                rwandaise (plat ancestrale rwandais) végétarien
-              </li>
-              <li>
-                <span className="font-medium">•</span> Carbonnades rwandaises
-                (traditionnelle belge-français revisité à la rwandaise)
-              </li>
-              <li>
-                <span className="font-medium">•</span> Bananes vertes, poulet
-                jaune (igisafuriya plat traditionnelle rwandais)
-              </li>
-              <li>
-                <span className="font-medium">•</span> Pomme de terre sautées
-                (végétarien)
-              </li>
-              <li>
-                <span className="font-medium">•</span> Riz pilaf rwandais /
-                indien
+                <span className="font-medium">•</span> {t("kenyanSalad")}
               </li>
             </ul>
 
             <p className="text-lg font-semibold mb-4 text-gray-800">
-              Entremet & Desserts
+              {t("dishes")}
+            </p>
+            <ul className="space-y-3 text-gray-700 mb-6">
+              <li>
+                <span className="font-medium">•</span>{" "}
+                {t("vealSweetbreadCroquette")}
+              </li>
+              <li>
+                <span className="font-medium">•</span>{" "}
+                {t("smokedSweetPotatoCroquette")}
+              </li>
+              <li>
+                <span className="font-medium">•</span> {t("wholeLamb")}
+              </li>
+              <li>
+                <span className="font-medium">•</span> {t("rwandanBbqGoat")}
+              </li>
+              <li>
+                <span className="font-medium">•</span> {t("greatLakesFish")}
+              </li>
+              <li>
+                <span className="font-medium">•</span> {t("pondu")}
+              </li>
+              <li>
+                <span className="font-medium">•</span> {t("chiliSinCarne")}
+              </li>
+              <li>
+                <span className="font-medium">•</span> {t("rwandanCarbonnades")}
+              </li>
+              <li>
+                <span className="font-medium">•</span>{" "}
+                {t("greenBananasChicken")}
+              </li>
+              <li>
+                <span className="font-medium">•</span> {t("sauteedPotatoes")}
+              </li>
+              <li>
+                <span className="font-medium">•</span> {t("rwandanPilafRice")}
+              </li>
+            </ul>
+
+            <p className="text-lg font-semibold mb-4 text-gray-800">
+              {t("desserts")}
             </p>
             <ul className="space-y-3 text-gray-700">
               <li>
-                <span className="font-medium">•</span> Sucettes de bananes
-                plantains frits, fromage
+                <span className="font-medium">•</span> {t("plantainLollipops")}
               </li>
               <li>
-                <span className="font-medium">•</span> Gâteau au drapeau
-                rwandais
+                <span className="font-medium">•</span> {t("rwandanFlagCake")}
               </li>
               <li>
-                <span className="font-medium">•</span> Mini crêpes impérial,
-                avec purée de fruits exotiques de saison ou caramel
+                <span className="font-medium">•</span> {t("miniImperialCrepes")}
               </li>
               <li>
-                <span className="font-medium">•</span> Beignets des grands lacs
+                <span className="font-medium">•</span> {t("greatLakesDonuts")}
               </li>
             </ul>
           </div>
@@ -227,45 +489,41 @@ const Review = () => {
 
         <div className="mt-10">
           <p className="text-lg font-semibold mb-4 text-gray-800">
-            Service Boissons <br />Sélection conseillée par la cheffe, revient à 16
-            euros par personne
+            {t("drinkService")} <br />
+            {t("drinkDescription")}
           </p>
           <div className="flex">
             <div className="left-side flex-grow pr-10">
               <ul className="space-y-3 text-gray-700">
                 <li>
-                  <span className="font-medium">•</span> Bierres locales (2) et
-                  ou belges (1)
+                  <span className="font-medium">•</span> {t("localBeers")}
                 </li>
                 <li>
-                  <span className="font-medium">•</span> Sangria fait maison
-                  (Apéritif alcoolisé)
+                  <span className="font-medium">•</span> {t("homemadeSangria")}
                 </li>
                 <li>
-                  <span className="font-medium">•</span> Virgin Mojito (Apéritif
-                  sans alcool)
+                  <span className="font-medium">•</span> {t("virginMojito")}
                 </li>
                 <li>
-                  <span className="font-medium">•</span> Eau (0.5 l)
+                  <span className="font-medium">•</span> {t("water")}
                 </li>
                 <li>
-                  <span className="font-medium">•</span> Soft
+                  <span className="font-medium">•</span> {t("softDrink")}
                 </li>
                 <li>
-                  <span className="font-medium">•</span> Vin Rouge
+                  <span className="font-medium">•</span> {t("redWine")}
                 </li>
                 <li>
-                  <span className="font-medium">•</span> Vin Blanc
+                  <span className="font-medium">•</span> {t("whiteWine")}
                 </li>
                 <li>
-                  <span className="font-medium">•</span> Liqueur de banane
-                  ancestrale digestive
+                  <span className="font-medium">•</span> {t("bananaLiqueur")}
                 </li>
                 <li>
-                  <span className="font-medium">•</span> Café
+                  <span className="font-medium">•</span> {t("coffee")}
                 </li>
                 <li>
-                  <span className="font-medium">•</span> Thé nature ou citroné
+                  <span className="font-medium">•</span> {t("tea")}
                 </li>
               </ul>
             </div>
