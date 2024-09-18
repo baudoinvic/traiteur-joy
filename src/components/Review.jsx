@@ -1,5 +1,6 @@
 import React from "react";
 import ReviewCard from "../layouts/ReviewCard";
+import { useTranslation } from "react-i18next"; 
 
 const Review = () => {
   return (
