@@ -17,8 +17,13 @@ import pic14 from "../assets/img/pic14.jpg";
 import pic15 from "../assets/img/pic15.jpg";
 import pic16 from "../assets/img/pic16.jpg";
 import pic17 from "../assets/img/pic17.jpg";
+import { useTranslation } from "react-i18next"; 
 
 const Gallery = () => {
+
+   const { t, i18n } = useTranslation();
+
+
   return (
     <div className="pt-40 px-8 py-16">
       <h1 className="text-center text-4xl mb-8 text-brightColor">
