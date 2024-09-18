@@ -27,10 +27,10 @@ const Gallery = () => {
   return (
     <div className="pt-40 px-8 py-16">
       <h1 className="text-center text-4xl mb-8 text-brightColor">
-        Traiteur Joy Galerie
+      
+        {t("galery")}
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-       
         <img
           src={pic2}
           alt="pic2"

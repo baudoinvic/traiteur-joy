@@ -44,7 +44,7 @@
   "bienvenue": "Welcome to Traiteur Joy, where we celebrate the art of fine gastronomy and exceptional culinary experiences. Our restaurant is a labor of love, born from a passion to create unforgettable moments through exquisite flavors and impeccable service.",
   "citation": "\"Each meal is a sensory journey that tantalizes the palate and delights the senses.\"",
   "croyance": "At Traiteur Joy, we believe that dining is not just about satisfying hunger. It's an immersion into a world of flavors. Our talented chefs meticulously craft each dish, using only the finest and freshest ingredients, ensuring that every bite is a masterpiece.",
-   "TRAITEUR_JOY_MENU": "TRAITEUR JOY MENU",
+  "TRAITEUR_JOY_MENU": "TRAITEUR JOY MENU",
   "Recettes": "Recipes",
   "Portion par élève": "Portion per student",
   "EUROS": "EUROS",
@@ -79,7 +79,7 @@
   "Pomme_pate_feuilletee": "Apple rolled in puff pastry or shortbread (80g) … +-1.20",
   "Pommes_crepes_normandes": "Apples, Normandy pancakes (100g) … +-1.70",
 
-   "title": "Traiteur Joy",
+  "title": "Traiteur Joy",
   "description": "We are here to serve you delicious dishes, accompanied by refined drinks.",
   "followUs": "Follow Our News",
   "subscribe": "Subscribe",
@@ -146,9 +146,7 @@
   "bananaLiqueur": "Ancestral digestive banana liqueur",
   "coffee": "Coffee",
   "tea": "Plain or lemon tea",
-
-
-
+  "galery": "Traiteur Joy Gallery",
 
   "dishes": {
     "hero": {
@@ -192,7 +190,6 @@
       "item2": "Dressing various fish",
       "item3": "Preparation of seafood (e.g., grey shrimp)"
     },
-
 
     "signature": {
       "title": "Signature Dishes",
@@ -248,8 +245,6 @@
       "action": "Call Now"
     },
 
-    
-  
     "form": {
       "title": "Send Us a Message",
       "firstname": "First Name",
@@ -264,8 +259,5 @@
       "messagePlaceholder": "Tell us about your culinary dreams...",
       "submit": "Send Message"
     }
-    
-    
-   
   }
 }
