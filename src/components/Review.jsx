@@ -3,6 +3,9 @@ import ReviewCard from "../layouts/ReviewCard";
 import { useTranslation } from "react-i18next"; 
 
 const Review = () => {
+
+   const { t, i18n } = useTranslation();
+
   return (
     <div className=" min-h-screen flex flex-col items-center justify-center md:px-32 px-5 pt-20">
       <h3 className=" text-4xl font-semibold text-center lg:pt-16 pt-24 pb-10 text-brightColor">
