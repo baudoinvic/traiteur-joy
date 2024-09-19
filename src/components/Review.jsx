@@ -209,7 +209,7 @@ const Review = () => {
         <div className="mt-10">
           <p className="text-lg font-semibold mb-4 text-gray-800">
             2. {t("drinkService")} <br />
-            {t("drinkDescription")}
+            {/* {t("drinkDescription")} */}
           </p>
           <div className="flex">
             <div className="left-side flex-grow pr-10">
