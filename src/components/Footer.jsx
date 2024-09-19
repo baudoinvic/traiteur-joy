@@ -4,6 +4,7 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { BsInstagram } from "react-icons/bs";
 import traite from "../assets/img/traite.png";
 import { Link } from "react-router-dom";
+import { ToastContainer,toast } from "react-toastify";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import {
@@ -91,6 +92,7 @@ const Footer = () => {
                   {t("subscribe")}
                 </button>
               </form>
+              <ToastContainer />
             </div>
           </div>
 
