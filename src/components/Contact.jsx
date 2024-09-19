@@ -13,9 +13,6 @@ function Contact() {
 
  const { t, i18n} = useTranslation();
 
-
-
-
     const [formData, setFormData] = useState({
     Firstname: "",
     Lastname: "",
