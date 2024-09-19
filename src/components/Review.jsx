@@ -87,9 +87,9 @@ const Review = () => {
       <div className="mt-10 max-w-4xl mx-auto bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
         <div className="flex">
           <div className="left-side flex-grow pr-10">
-            <p className="text-lg font-semibold mb-4 text-gray-800">
+            {/* <p className="text-lg font-semibold mb-4 text-gray-800">
               {t("entries")}
-            </p>
+            </p> */}
             <ul className="space-y-3 text-gray-700 mb-6">
               <li>
                 <span className="font-medium">•</span> {t("miniFishFillets")}
@@ -150,9 +150,9 @@ const Review = () => {
               </li>
             </ul>
 
-            <p className="text-lg font-semibold mb-4 text-gray-800">
+            {/* <p className="text-lg font-semibold mb-4 text-gray-800">
               {t("desserts")}
-            </p>
+            </p> */}
             <ul className="space-y-3 text-gray-700">
               <li>
                 <span className="font-medium">•</span> {t("plantainLollipops")}
@@ -206,8 +206,8 @@ const Review = () => {
           </div>
         </div>
 
-        <div className="mt-2 ">
-          <p className="text-lg font-semibold mb-4 text-gray-800">
+        <div className="mt-2  ">
+          <p className="text-lg font-semibold mb-4 -mt-20 text-gray-800">
             2. {t("drinkService")} <br />
             {/* {t("drinkDescription")} */}
           </p>
@@ -269,10 +269,7 @@ const Review = () => {
             {/* {t("drinkDescription")} */}
           </p>
           <div className="flex">
-            <div className="left-side flex-grow pr-10">
-             
-            </div>
-         
+            <div className="left-side flex-grow pr-10"></div>
           </div>
         </div>
       </div>
