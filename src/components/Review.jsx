@@ -7,8 +7,6 @@ const Review = () => {
    const { t, i18n } = useTranslation();
 
   return (
-   
-
     <div className="min-h-screen flex flex-col items-center justify-center md:px-32 px-5 pt-20">
       <h3 className="text-4xl font-semibold text-center lg:pt-16 pt-24 pb-10 text-brightColor">
         {t("servicesFood")}
@@ -18,7 +16,7 @@ const Review = () => {
       <div className="mt-10 max-w-4xl mx-auto bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
         <div className="flex">
           <div className="left-side flex-grow pr-10">
-            <p className="text-lg font-semibold mb-4">{t("amusesBouches")}</p>
+            <p className="text-lg font-semibold mb-4">1.   {t("Nourriture")}</p>
             <ul className="space-y-4 text-gray-700">
               <li>
                 <span className="font-medium">•</span> {t("smokedFish")}
