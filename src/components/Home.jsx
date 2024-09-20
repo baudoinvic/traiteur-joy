@@ -20,7 +20,7 @@ const Home = () => {
             </h1>
             <p className="text-lg lg:text-xl font-light max-w-2xl">
               {t(
-                "Nous sommes là pour vous servir des plats délicieux, accompagnés de boissons raffinées. Nous servons toujours des plats savoureux à nos clients."
+                "Nous sommes là pour vous servir des plats délicieux, accompagnés de boissons raffinées. Nous servons toujours des plats savoureux à nos invitées."
               )}
             </p>
             <div className="mt-10">
@@ -93,7 +93,6 @@ const Home = () => {
         </div>
       </div>
       ----
-     
       <div>
         <div className="pt-15">
           <div className="flex flex-col-reverse lg:flex-row items-center justify-center">
