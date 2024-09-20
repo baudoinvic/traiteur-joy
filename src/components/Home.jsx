@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import funy from "../assets/img/funy.jpg";
 import { useTranslation } from "react-i18next";
 
+
 const Home = () => {
     const { t, i18n } = useTranslation(); 
   return (
