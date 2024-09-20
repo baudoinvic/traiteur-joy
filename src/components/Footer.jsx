@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-
+import axios from "axios";
 
 const Footer = () => {
  const {t, i18n} = useTranslation();
