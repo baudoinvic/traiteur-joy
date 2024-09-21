@@ -134,7 +134,7 @@ const Navbar = () => {
             alt="French Flag"
             className="w-4"
           />
-          <span className="text-white">Fr</span>
+          <span className="text-gray-500 text-sm">Fr</span>
         </button>
         <button
           onClick={() => changeLanguage("en")}
@@ -143,9 +143,9 @@ const Navbar = () => {
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCIEEb2cSAlgP4ZLCUL8r6Jgw0cvjAhXwiCtc1eXYGTA&s"
             alt="English Flag"
-            className="w-8"
+            className="w-6"
           />
-          <span className="text-white">Eng</span>
+          <span className="text-gray-500 text-sm">Eng</span>
         </button>
       </div>
     </>
