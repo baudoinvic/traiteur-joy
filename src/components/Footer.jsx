@@ -48,10 +48,8 @@ const Footer = () => {
       toast.error("Failed to subscribe. Please try again later.");
     }
   }
-
-
   return (
-   
+  
     <div className="bg-gray-900 text-white rounded-t-3xl mt-8 md:mt-0 shadow-2xl">
       <div className="container mx-auto p-8 md:p-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
