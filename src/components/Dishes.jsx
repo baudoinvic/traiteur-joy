@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const Dishes = () => {
   const { t, i18n } = useTranslation();
-
+  
   return (
     <div className="cooking-course pt-20">
       <div
