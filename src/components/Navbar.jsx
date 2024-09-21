@@ -202,7 +202,7 @@ const Navbar = () => {
         {/* Mobile Navigation Menu - Overlay */}
         {isMenuOpen && (
           <div className="md:hidden fixed inset-0 bg-gray-800 bg-opacity-95 z-50">
-            {/* Close Button */}
+           
             <div className="flex justify-end p-4">
               <button
                 className="text-white hover:text-brightColor transition-colors focus:outline-none"
