@@ -8,7 +8,6 @@ import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { useTranslation} from "react-i18next";
-
 function Contact() {
 
  const { t, i18n} = useTranslation();
