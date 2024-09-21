@@ -8,7 +8,6 @@ const About = () => {
   const { t, i18n } = useTranslation();
 
   return (
-  
     <div className="min-h-screen py-16 lg:py-24">
       <div className="container mx-auto px-4 lg:px-16 pt-20">
         <h1 className="text-4xl lg:text-5xl text-brightColor text-right mb-4 transform hover:scale-105 transition-transform duration-300">
