@@ -37,7 +37,7 @@ function Contact() {
  
 
       const response = await axios({
-        url: "https://fabtechhub.onrender.com/FabtechHub/contacts/makecontact",
+        url: "http://localhost:5000/api/contact",
         method: "POST",
         headers: {
           "Content-Type": "application/json",
