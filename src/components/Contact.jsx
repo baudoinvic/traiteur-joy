@@ -16,7 +16,6 @@ function Contact() {
     Firstname: "",
     Lastname: "",
     email: "",
-    phoneNumber: "",
     message: "",
   });
 
@@ -196,23 +195,6 @@ function Contact() {
                 />
               </div>
 
-              <div>
-                <label
-                  htmlFor="phoneNumber"
-                  className="block text-sm font-medium text-gray-700 mb-2"
-                >
-                  {t("contact.form.phone")}
-                </label>
-                <input
-                  type="tel"
-                  id="phoneNumber"
-                  name="phoneNumber"
-                  className="w-full px-4 py-3 rounded-lg bg-gray-100 border-transparent focus:border-brightColor focus:bg-white focus:ring-0"
-                  placeholder={t("contact.form.phonePlaceholder")}
-                  onChange={handleChange}
-                  required
-                />
-              </div>
 
               <div>
                 <label
