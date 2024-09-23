@@ -1,6 +1,5 @@
 
 import React from "react";
-
 import pic2 from "../assets/img/pic2.jpg";
 import pic3 from "../assets/img/pic3.jpg";
 import pic4 from "../assets/img/pic4.jpg";
