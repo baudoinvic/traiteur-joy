@@ -209,7 +209,6 @@ const Review = () => {
         <div className="mt-2  ">
           <p className="text-lg font-semibold mb-4 -mt-20 text-gray-800">
             2. {t("drinkService")} <br />
-        
           </p>
           <div className="flex">
             <div className="left-side flex-grow pr-10">
