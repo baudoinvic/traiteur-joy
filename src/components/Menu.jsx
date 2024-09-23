@@ -7,7 +7,7 @@ const Menu = () => {
 
 const { t, i18n } = useTranslation();
   return (
-   
+    
     <div
       className="min-h-screen flex flex-col justify-center items-center lg:px-32 px-3 pt-16 lg:pt-20 bg-cover bg-center"
       style={{
