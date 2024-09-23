@@ -199,7 +199,6 @@ const Navbar = () => {
           </div>
         </div>
 
-       
         {isMenuOpen && (
           <div className="md:hidden fixed inset-0 bg-gray-800 bg-opacity-95 z-50">
            
