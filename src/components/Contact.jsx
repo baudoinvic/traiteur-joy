@@ -29,7 +29,8 @@ function Contact() {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+   e.preventDefault();
+
 
     try {
       let token = localStorage.getItem("token");
