@@ -32,7 +32,7 @@ const Footer = () => {
       console.log("Newsletter Subscription Email:", email);
 
       const response = await axios({
-        url: "https://auction-website-auji.onrender.com/api/v1/subscriptions",
+        url: "http://localhost:5000/api/sendemail",
         method: "POST",
         headers: {
           "Content-Type": "application/json",
