@@ -36,7 +36,6 @@ function Contact() {
       let token = localStorage.getItem("token");
       console.log("Request Data:", formData);
  
-
       const response = await axios({
         url: "http://localhost:5000/api/contact",
         method: "POST",
@@ -58,8 +57,6 @@ function Contact() {
        });
 
        document.getElementById("firstname").focus();
-
-
 
     } catch (error) {
       console.error("Error:", error.response ? error.response.data : error);
