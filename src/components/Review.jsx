@@ -170,10 +170,7 @@ const Review = () => {
                 <span className="font-medium">•</span> {t("rwandanPilafRice")}
               </li>
             </ul>
-
-            {/* <p className="text-lg font-semibold mb-4 text-gray-800">
-              {t("desserts")}
-            </p> */}
+            
             <ul className="space-y-3 text-gray-700">
               <li>
                 <span className="font-medium">•</span> {t("plantainLollipops")}
