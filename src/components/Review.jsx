@@ -170,7 +170,7 @@ const Review = () => {
                 <span className="font-medium">•</span> {t("rwandanPilafRice")}
               </li>
             </ul>
-            
+
             <ul className="space-y-3 text-gray-700">
               <li>
                 <span className="font-medium">•</span> {t("plantainLollipops")}
@@ -188,18 +188,15 @@ const Review = () => {
           </div>
 
           <div className="right-side w-24 text-right">
-            <p className="text-2xl font-bold mb-6 invisible">Prix</p>
-
-            <p className="text-lg font-semibold mb-4 invisible">Prix</p>
             <ul className="space-y-3 text-gray-800 mb-6">
-              <li>1,2 €</li>
-              <li>1 €</li>
-              <li>0,7 €</li>
-              <li>2 €</li>
-              <li>0,5 €</li>
+              <li>2,4 €/ 3360 RWF</li>
+              <li>2 €/ 2800 RWF</li>
+              <li>1,4 € / 1960 RWF</li>
+              <li>4 € / 5600 RWF</li>
+              <li>1 € / 1400 RWF</li>
             </ul>
 
-            <p className="text-lg font-semibold mb-4 invisible">Prix</p>
+           
             <ul className="space-y-3 text-gray-800 mb-6">
               <li>1,5 €</li>
               <li>0,5 €</li>
