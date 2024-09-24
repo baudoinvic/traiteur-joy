@@ -7,6 +7,8 @@ const Review = () => {
    const { t, i18n } = useTranslation();
 
   return (
+ 
+
     <div className="min-h-screen flex flex-col items-center justify-center md:px-32 px-5 pt-20">
       <h3 className="text-4xl font-semibold text-center lg:pt-16 pt-24 pb-10 text-brightColor">
         {t("servicesFood")}
@@ -19,91 +21,55 @@ const Review = () => {
             <p className="text-lg font-semibold mb-4">1. {t("Nourriture")}</p>
             <ul className="space-y-4 text-gray-700">
               <li>
-                <span className="font-medium">•</span> {t("smokedFish")}
+                <span className="font-medium">•</span> {t("smokedFish")} - 3 € /
+                4200 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("indianCrepe")}
+                <span className="font-medium">•</span> {t("indianCrepe")} - 3 €
+                / 4200 RWF
               </li>
               <li>
-                <p className="font-medium mb-2">{t("miniTatin")} :</p>
+                <p className="font-medium mb-2">{t("miniTatin")}:</p>
                 <ul className="pl-6 space-y-1">
                   <li>
-                    <span className="font-medium">•</span> {t("topinambour")}
+                    <span className="font-medium">•</span> {t("topinambour")} -
+                    1 € / 1400 RWF
                   </li>
                   <li>
-                    <span className="font-medium">•</span> {t("cassava")}
+                    <span className="font-medium">•</span> {t("cassava")} - 1 €
+                    / 1400 RWF
                   </li>
                   <li>
-                    <span className="font-medium">•</span> {t("yam")}
+                    <span className="font-medium">•</span> {t("yam")} - 2 € /
+                    2800 RWF
                   </li>
                 </ul>
               </li>
               <li>
                 <p>
-                  <span className="font-medium">•</span> {t("mushroom")}
+                  <span className="font-medium">•</span> {t("mushroom")} - 2 € /
+                  2800 RWF
                 </p>
                 <ul className="pl-6 space-y-1 mt-1">
                   <li>
-                    <span className="font-medium">•</span> {t("garlicButter")}
+                    <span className="font-medium">•</span> {t("garlicButter")} -
+                    2 € / 2800 RWF
                   </li>
                   <li>
                     <span className="font-medium">•</span>{" "}
-                    {t("rwandanMeatballs")}
+                    {t("rwandanMeatballs")} - 2 € / 2800 RWF
                   </li>
                   <li>
                     <span className="font-medium">•</span>{" "}
-                    {t("rwandanIndianSamosa")}
+                    {t("rwandanIndianSamosa")} - 2 € / 2800 RWF
                   </li>
                 </ul>
               </li>
             </ul>
           </div>
-          {/* <div className="right-side w-32 text-right">
-            <p className="text-lg font-semibold mb-4 invisible">Prix</p>
-            <ul className="space-y-4 text-gray-800">
-              <li>1,5 €</li>
-              <li>1,5 €</li>
-              <li>
-                <p className="invisible mb-2">Prix</p>
-                <ul className="space-y-1">
-                  <li>0,5 €</li>
-                  <li>0,5 €</li>
-                  <li>1 €</li>
-                </ul>
-              </li>
-              <li>
-                <p>1 €</p>
-                <ul className="space-y-1 mt-1">
-                  <li>1 €</li>
-                  <li>1 €</li>
-                  <li>1 €</li>
-                </ul>
-              </li>
-            </ul>
-          </div> */}
 
           <div className="right-side w-32 text-right">
-            <p className="text-lg font-semibold mb-4 invisible">Prix</p>
-            <ul className="space-y-4 text-gray-800">
-              <li>3 € / 4200 RWF</li>
-              <li>3 € / 4200 RWF</li>
-              <li>
-                <p className="invisible mb-2">Prix</p>
-                <ul className="space-y-1">
-                  <li>1 € / 1400 RWF</li>
-                  <li>1 € / 1400 RWF</li>
-                  <li>2 € / 2800 RWF</li>
-                </ul>
-              </li>
-              <li>
-                <p>2 € / 2800 RWF</p>
-                <ul className="space-y-1 mt-1">
-                  <li>2 € / 2800 RWF</li>
-                  <li>2 € / 2800 RWF</li>
-                  <li>2 € / 2800 RWF</li>
-                </ul>
-              </li>
-            </ul>
+          
           </div>
         </div>
       </div>
@@ -113,19 +79,24 @@ const Review = () => {
           <div className="left-side flex-grow pr-10">
             <ul className="space-y-3 text-gray-700 mb-6">
               <li>
-                <span className="font-medium">•</span> {t("miniFishFillets")}
+                <span className="font-medium">•</span> {t("miniFishFillets")} -
+                2,4 € / 3360 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("nicoiseSalad")}
+                <span className="font-medium">•</span> {t("nicoiseSalad")} - 2 €
+                / 2800 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("pastaSalad")}
+                <span className="font-medium">•</span> {t("pastaSalad")} - 1,4 €
+                / 1960 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("eggplantCheese")}
+                <span className="font-medium">•</span> {t("eggplantCheese")} - 4
+                € / 5600 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("kenyanSalad")}
+                <span className="font-medium">•</span> {t("kenyanSalad")} - 1 €
+                / 1400 RWF
               </li>
             </ul>
 
@@ -135,91 +106,74 @@ const Review = () => {
             <ul className="space-y-3 text-gray-700 mb-6">
               <li>
                 <span className="font-medium">•</span>{" "}
-                {t("vealSweetbreadCroquette")}
+                {t("vealSweetbreadCroquette")} - 3 € / 4200 RWF
               </li>
               <li>
                 <span className="font-medium">•</span>{" "}
-                {t("smokedSweetPotatoCroquette")}
+                {t("smokedSweetPotatoCroquette")} - 1 € / 1400 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("wholeLamb")}
+                <span className="font-medium">•</span> {t("wholeLamb")} - 8 € /
+                11200 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("rwandanBbqGoat")}
+                <span className="font-medium">•</span> {t("rwandanBbqGoat")} - 6
+                € / 8400 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("greatLakesFish")}
+                <span className="font-medium">•</span> {t("greatLakesFish")} - 8
+                € / 11200 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("pondu")}
+                <span className="font-medium">•</span> {t("pondu")} - 1 € / 1400
+                RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("chiliSinCarne")}
+                <span className="font-medium">•</span> {t("chiliSinCarne")} -
+                0,6 € / 840 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("rwandanCarbonnades")}
+                <span className="font-medium">•</span> {t("rwandanCarbonnades")}{" "}
+                - 1,4 € / 1960 RWF
               </li>
               <li>
                 <span className="font-medium">•</span>{" "}
-                {t("greenBananasChicken")}
+                {t("greenBananasChicken")} - 6 € / 8400 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("sauteedPotatoes")}
+                <span className="font-medium">•</span> {t("sauteedPotatoes")} -
+                0,6 € / 840 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("rwandanPilafRice")}
+                <span className="font-medium">•</span> {t("rwandanPilafRice")} -
+                1,4 € / 1960 RWF
               </li>
             </ul>
 
             <ul className="space-y-3 text-gray-700">
               <li>
-                <span className="font-medium">•</span> {t("plantainLollipops")}
+                <span className="font-medium">•</span> {t("plantainLollipops")}{" "}
+                - 1,2 € / 1680 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("rwandanFlagCake")}
+                <span className="font-medium">•</span> {t("rwandanFlagCake")} -
+                6 € / 8400 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("miniImperialCrepes")}
+                <span className="font-medium">•</span> {t("miniImperialCrepes")}{" "}
+                - 1,6 € / 2240 RWF
               </li>
               <li>
-                <span className="font-medium">•</span> {t("greatLakesDonuts")}
+                <span className="font-medium">•</span> {t("greatLakesDonuts")} -
+                0,4 € / 560 RWF
               </li>
             </ul>
           </div>
 
-          <div className="right-side w-24 text-right">
-            <ul className="space-y-3 text-gray-800 mb-6">
-              <li>2,4 €/ 3360 RWF</li>
-              <li>2 €/ 2800 RWF</li>
-              <li>1,4 € / 1960 RWF</li>
-              <li>4 € / 5600 RWF</li>
-              <li>1 € / 1400 RWF</li>
-            </ul>
-
-            <ul className="space-y-3 text-gray-800 mb-6">
-              <li>3 € / 4200 RWF</li>
-              <li>1 € / 1400 RWF</li>
-              <li>8 € / 11200 RWF</li>
-              <li>6 € / 8400 RWF</li>
-              <li>8 € / 11200 RWF</li>
-              <li>1 € / 1400 RWF</li>
-              <li>0,6 € / 840 RWF</li>
-              <li>1,4 € / 1960 RWF</li>
-              <li>6 € / 8400 RWF</li>
-              <li>0,6 € / 840 RWF</li>
-              <li>1,4 € / 1960 RWF</li>
-            </ul>
-
-            <ul className="space-y-3 text-gray-800">
-              <li>1,2 € / 1680 RWF</li>
-              <li>6 € / 8400 RWF</li>
-              <li>1,6 € / 2240 RWF</li>
-              <li>0,4 € / 560 RWF</li>
-            </ul>
-          </div>
+         
         </div>
 
-        <div className="mt-2  ">
+        <div className="mt-32">
           <p className="text-lg font-semibold mb-4 -mt-20 text-gray-800">
             2. {t("drinkService")} <br />
           </p>
@@ -227,61 +181,56 @@ const Review = () => {
             <div className="left-side flex-grow pr-10">
               <ul className="space-y-3 text-gray-700">
                 <li>
-                  <span className="font-medium">•</span> {t("localBeers")}
+                  <span className="font-medium">•</span> {t("localBeers")} - 8 €
+                  / 11200 RWF
                 </li>
                 <li>
-                  <span className="font-medium">•</span> {t("homemadeSangria")}
+                  <span className="font-medium">•</span> {t("homemadeSangria")}{" "}
+                  - 6 € / 8400 RWF
                 </li>
                 <li>
-                  <span className="font-medium">•</span> {t("virginMojito")}
+                  <span className="font-medium">•</span> {t("virginMojito")} - 5
+                  € / 7000 RWF
                 </li>
                 <li>
-                  <span className="font-medium">•</span> {t("water")}
+                  <span className="font-medium">•</span> {t("water")} - 2 € /
+                  2800 RWF
                 </li>
                 <li>
-                  <span className="font-medium">•</span> {t("softDrink")}
+                  <span className="font-medium">•</span> {t("softDrink")} - 2 €
+                  / 2800 RWF
                 </li>
                 <li>
-                  <span className="font-medium">•</span> {t("redWine")}
+                  <span className="font-medium">•</span> {t("redWine")} - 12 € /
+                  16800 RWF
                 </li>
                 <li>
-                  <span className="font-medium">•</span> {t("whiteWine")}
+                  <span className="font-medium">•</span> {t("whiteWine")} - 12 €
+                  / 16800 RWF
                 </li>
                 <li>
-                  <span className="font-medium">•</span> {t("bananaLiqueur")}
+                  <span className="font-medium">•</span> {t("bananaLiqueur")} -
+                  5 € / 7000 RWF
                 </li>
                 <li>
-                  <span className="font-medium">•</span> {t("coffee")}
+                  <span className="font-medium">•</span> {t("coffee")} - 5 € /
+                  7000 RWF
                 </li>
                 <li>
-                  <span className="font-medium">•</span> {t("tea")}
+                  <span className="font-medium">•</span> {t("tea")} - 3 € / 4200
+                  RWF
                 </li>
               </ul>
             </div>
-            <div className="right-side w-24 text-right">
-              <ul className="space-y-3 text-gray-800">
-                <li>8 € / 11200 RWF</li>
-                <li>6 € / 8400 RWF</li>
-                <li>5 € / 7000 RWF</li>
-                <li>2 € / 2800 RWF</li>
-                <li>2 € / 2800 RWF</li>
-                <li>12 € / 16800 RWF</li>
-                <li>12 € / 16800 RWF</li>
-                <li>5 € / 7000 RWF</li>
-                <li>5 € / 7000 RWF</li>
-                <li>3 € / 4200 RWF</li>
-              </ul>
-            </div>
+           
           </div>
         </div>
 
-        <div className="mt-10 ">
+        <div className="mt-10">
           <p className="text-lg font-semibold mb-4 text-gray-800">
             3. {t("produit")} <br />
           </p>
-          <div className="flex">
-            <div className="left-side flex-grow pr-10"></div>
-          </div>
+          <div className="flex"></div>
         </div>
       </div>
     </div>
