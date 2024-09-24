@@ -87,9 +87,7 @@ const Review = () => {
       <div className="mt-10 max-w-4xl mx-auto bg-white bg-opacity-90 rounded-lg shadow-lg p-6">
         <div className="flex">
           <div className="left-side flex-grow pr-10">
-            {/* <p className="text-lg font-semibold mb-4 text-gray-800">
-              {t("entries")}
-            </p> */}
+         
             <ul className="space-y-3 text-gray-700 mb-6">
               <li>
                 <span className="font-medium">•</span> {t("miniFishFillets")}
