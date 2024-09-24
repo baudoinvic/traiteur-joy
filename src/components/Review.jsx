@@ -196,27 +196,25 @@ const Review = () => {
               <li>1 € / 1400 RWF</li>
             </ul>
 
-           
             <ul className="space-y-3 text-gray-800 mb-6">
-              <li>1,5 €</li>
-              <li>0,5 €</li>
-              <li>4 €</li>
-              <li>3 €</li>
-              <li>4 €</li>
-              <li>0,5 €</li>
-              <li>0,3 €</li>
-              <li>0,7 €</li>
-              <li>3 €</li>
-              <li>0,3 €</li>
-              <li>0,7 €</li>
+              <li>3 € / 4200 RWF</li>
+              <li>1 € / 1400 RWF</li>
+              <li>8 € / 11200 RWF</li>
+              <li>6 € / 8400 RWF</li>
+              <li>8 € / 11200 RWF</li>
+              <li>1 € / 1400 RWF</li>
+              <li>0,6 € / 840 RWF</li>
+              <li>1,4 € / 1960 RWF</li>
+              <li>6 € / 8400 RWF</li>
+              <li>0,6 € / 840 RWF</li>
+              <li>1,4 € / 1960 RWF</li>
             </ul>
 
-            <p className="text-lg font-semibold mb-4 invisible">Prix</p>
             <ul className="space-y-3 text-gray-800">
-              <li>0,6 €</li>
-              <li>3 €</li>
-              <li>0,8 €</li>
-              <li>0,2 €</li>
+              <li>1,2 € / 1680 RWF</li>
+              <li>6 € / 8400 RWF</li>
+              <li>1,6 € / 2240 RWF</li>
+              <li>0,4 € / 560 RWF</li>
             </ul>
           </div>
         </div>
@@ -262,16 +260,16 @@ const Review = () => {
             </div>
             <div className="right-side w-24 text-right">
               <ul className="space-y-3 text-gray-800">
-                <li>4 €</li>
-                <li>3 €</li>
-                <li>2,5 €</li>
-                <li>1 €</li>
-                <li>1 €</li>
-                <li>6 €</li>
-                <li>6 €</li>
-                <li>2,5 €</li>
-                <li>2,5 €</li>
-                <li>1,5 €</li>
+                <li>8 € / 11200 RWF</li>
+                <li>6 € / 8400 RWF</li>
+                <li>5 € / 7000 RWF</li>
+                <li>2 € / 2800 RWF</li>
+                <li>2 € / 2800 RWF</li>
+                <li>12 € / 16800 RWF</li>
+                <li>12 € / 16800 RWF</li>
+                <li>5 € / 7000 RWF</li>
+                <li>5 € / 7000 RWF</li>
+                <li>3 € / 4200 RWF</li>
               </ul>
             </div>
           </div>
