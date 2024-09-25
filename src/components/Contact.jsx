@@ -31,7 +31,6 @@ function Contact() {
   const handleSubmit = async (e) => {
    e.preventDefault();
 
-
     try {
       let token = localStorage.getItem("token");
       console.log("Request Data:", formData);
