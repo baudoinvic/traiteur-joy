@@ -1,6 +1,4 @@
 import React from "react";
-// import img from "../assets/img/about.png";
-// import Button from "../layouts/Button";
 import funy from "../assets/img/funy.jpg";
 import { useTranslation } from "react-i18next"; 
 
