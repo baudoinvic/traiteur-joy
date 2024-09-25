@@ -11,7 +11,6 @@ const About = () => {
         <h1 className="text-4xl lg:text-5xl text-brightColor text-right mb-4 transform hover:scale-105 transition-transform duration-300">
           <span className="text-right mr-40">{t("aPropos")}</span>
         </h1>
-
         <div className="flex flex-col lg:flex-row items-center space-y-12 lg:space-y-0 lg:space-x-16">
           <div className="lg:w-1/2 relative group">
             <img
