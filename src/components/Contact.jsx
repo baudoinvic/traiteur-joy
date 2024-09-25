@@ -163,6 +163,7 @@ function Contact() {
                     className="w-full px-4 py-3 rounded-lg bg-gray-100 border-transparent focus:border-brightColor focus:bg-white focus:ring-0"
                     placeholder={t("contact.form.firstnamePlaceholder")}
                     onChange={handleChange}
+                    value={formData.Firstname}
                     required
                   />
                 </div>
@@ -180,6 +181,7 @@ function Contact() {
                     className="w-full px-4 py-3 rounded-lg bg-gray-100 border-transparent focus:border-brightColor focus:bg-white focus:ring-0"
                     placeholder={t("contact.form.lastnamePlaceholder")}
                     onChange={handleChange}
+                    value={formData.Lastname}
                     required
                   />
                 </div>
@@ -199,6 +201,7 @@ function Contact() {
                   className="w-full px-4 py-3 rounded-lg bg-gray-100 border-transparent focus:border-brightColor focus:bg-white focus:ring-0"
                   placeholder={t("contact.form.emailPlaceholder")}
                   onChange={handleChange}
+                  value={formData.email}
                   required
                 />
               </div>
@@ -217,6 +220,7 @@ function Contact() {
                   className="w-full px-4 py-3 rounded-lg bg-gray-100 border-transparent focus:border-brightColor focus:bg-white focus:ring-0"
                   placeholder={t("contact.form.messagePlaceholder")}
                   onChange={handleChange}
+                  value={formData.message}
                   required
                 ></textarea>
               </div>
