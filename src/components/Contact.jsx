@@ -54,7 +54,7 @@ function Contact() {
          message: "",
        });
 
-       document.getElementById("firstname").focus();
+      //  document.getElementById("Firstname").focus();
 
     } catch (error) {
       console.error("Error:", error.response ? error.response.data : error);
