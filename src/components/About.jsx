@@ -34,7 +34,7 @@ const About = () => {
             <blockquote className="border-l-4 border-purple-500 pl-4 py-2 mb-6 bg-purple-100 bg-opacity-50 rounded-r-lg shadow-inner">
               <p className="text-gray-800 italic">{t("citation")}</p>
             </blockquote>
-
+            
             <p className="text-gray-700 leading-relaxed transition-opacity duration-500 hover:opacity-80">
               {t("croyance")}
             </p>
