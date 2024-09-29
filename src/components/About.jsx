@@ -27,8 +27,6 @@ const About = () => {
               {t("passionGastronomie")}
               <span className="text-brightColor"> {t("gastronomieFine")}</span>
             </h2>
-
-
             <p className="text-gray-700 leading-relaxed mb-6 transition-opacity duration-500 hover:opacity-80">
               {t("bienvenue")}
             </p>
