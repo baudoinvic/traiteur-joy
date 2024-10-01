@@ -44,6 +44,7 @@ function Contact() {
         data: JSON.stringify(formData),
       });
 
+      
       console.log("Response Data:", response.data);
       toast.success("Thank you for your feedback");
     
