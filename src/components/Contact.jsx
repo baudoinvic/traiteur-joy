@@ -56,7 +56,7 @@ function Contact() {
 
     } catch (error) {
       console.error("Error:", error.response ? error.response.data : error);
-      toast.error("Failed to send message. Please try again later.");
+      toast.error("Failed to send message. Please try again later");
     }
 }
   return (
