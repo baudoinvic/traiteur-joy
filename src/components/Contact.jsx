@@ -45,7 +45,7 @@ function Contact() {
       });
 
       console.log("Response Data:", response.data);
-      toast.success("Thank you for your feedback");
+      toast.success("Merci pour votre retour");
     
        setFormData({
          Firstname: "",
