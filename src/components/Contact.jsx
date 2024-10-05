@@ -35,7 +35,7 @@ function Contact() {
       console.log("Request Data:", formData);
  
       const response = await axios({
-        url: "https://nodemailer-eight.vercel.app/api/contact",
+        url: "http://localhost:5000/api/contact",
         method: "POST",
         headers: {
           "Content-Type": "application/json",

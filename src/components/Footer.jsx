@@ -32,7 +32,7 @@ const Footer = () => {
       console.log("Newsletter Subscription Email:", email);
 
       const response = await axios({
-       url: "https://nodemailer-eight.vercel.app/api/sendemail",
+        url: "http://localhost:5000/api/sendemail",
         method: "POST",
         headers: {
           "Content-Type": "application/json",
