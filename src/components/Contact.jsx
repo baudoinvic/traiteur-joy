@@ -35,7 +35,7 @@ function Contact() {
       console.log("Request Data:", formData);
  
       const response = await axios({
-        url: "http://localhost:5000/api/contact",
+        url: "https://nodemailer-1-traiteur.onrender.com/api/contact",
         method: "POST",
         headers: {
           "Content-Type": "application/json",
